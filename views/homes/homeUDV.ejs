@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeUDV</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <style>
+    body{
+        background-color: #f7f7f7;
+    }
+    .card {
+      width: 18rem;
+      text-align: center;
+      margin-top: 50px;
+      border-radius: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin: 10px auto;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-link {
+      display: block;
+      margin-top: 10px;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    display: flex;
+    }
+
+/* navar */
+    
+
+.header{
+color: white;
+background-color:  rgb(34, 34, 34);
+
+}
+.logo img{
+
+width: auto;
+margin-top: auto;
+}
+
+
+.logo{
+cursor: pointer;
+margin-right: auto;
+}
+
+
+img{
+width: 100px;
+margin-top: 30px;
+
+}
+
+
+.logo img {width: 60px;}
+
+.header li{
+display: inline-block;
+padding: 0 20px;
+
+cursor: pointer;
+}
+.header li:hover{
+transform: scale(1.1);
+}
+.header a{
+font-size: 700;
+text-decoration: none;
+}
+.header li:hover{
+color:   rgb(253, 253, 255);
+}
+.header button{
+margin-left: 20px;
+font-weight: 700;
+color:  white;
+padding: 9px 25px;
+background: rgb(65, 65, 224);
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+font-size: 12px;
+}
+
+
+.header button:hover {
+background-color: white;
+color: rgb(61, 61, 177);
+transform: scale(1.1);
+}
+h2{
+margin-top: 20px;
+font-size: 20px;
+}
+
+
+.nav-bar {
+
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+position: relative;
+background-color: var(--color2);
+padding: 10px 10px;
+cursor: pointer;
+
+}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+display: inline-block;
+text-decoration: none;
+color: var(--color1);
+text-align: center;
+transition: 0.15s ease-in-out;
+position: relative;
+text-transform: uppercase;
+font-size: 12px;
+
+}
+.menu li a::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0;
+height: 1px;
+background-color: var(--color1);
+transition: 0.15s ease-in-out;
+}
+.sola {
+display: none;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+position: absolute;
+color: var(--color1);
+cursor: pointer;
+font-size: 1.5rem;
+display: none;
+}
+.open-menu {
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+}
+.close-menu {
+top: 20px;
+right: 20px;
+}
+.laa{
+color: rgb(61, 61, 177);
+display: none;
+}
+#check {display: none;}
+
+.PEPI{
+
+color: white;
+
+}
+.pipi{
+color: rgb(255, 255, 255);
+}
+.pipo{
+color: green;
+}
+.mt-0 {
+margin-top: 0 !important;
+}
+.container{
+max-width: 10000000px;
+}
+.table{
+background-color: #178f45;
+}
+table.table-bordered.dataTable thead tr:first-child th, table.table-bordered.dataTable thead tr:first-child td {
+text-align: center;
+}
+.span{
+color: red;
+}
+
+
+@media(max-width: 900px){
+.laa{
+    display: flex;
+
+}
+.PEPI{
+    display: none;
+}
+.topo{
+  display: flex;
+}
+.pipi{
+    display: none;
+}
+.menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.2s ease-in-out;
+    
+
+}
+
+
+.po{
+  display: none;
+}
+.menu li a:hover{
+
+
+transform: scale(1.1);
+
+}
+.papa{
+  display: flex;
+  color: red;
+}
+
+.sola{
+    display: block;
+}
+.menu li {margin-top: 40px;}
+.menu li a {padding: 10px;
+    font-size: 20px;
+  color: white;}
+.open-menu , .close-menu {display: block;}
+#check:checked ~ .menu {right: 0;}
+.button{
+display: none;
+}
+@media (max-width: 900px){
+.menu li a {
+    padding: 10px;
+    font-size: 20px;
+}}
+}
+.abajo{
+    margin-top: 40px;
+}
+.lol{
+    font-size: 2.9rem;
+}
+/* // card h1// */
+.h1, h1 {
+    font-size: 1.5rem;
+}
+/* Persona */
+.lili{
+
+font-weight: 700;
+color:  white;
+ 
+}
+.salir{
+
+  color: red;
+  padding: 8px;
+  background-color: white;
+  border-radius: 20%;
+
+  
+}
+.red{
+  color: red;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+ 
+    <header class="header">
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                <input type='checkbox' id='check' />
+                <button class="button">INICIO</button>
+                <span class="menu">
+      
+                    <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                    <li><a href="">Soporte</a></li>
+                    <li><a href="">Visión G12</a></li>
+                      <li ><a href="#">ZONA <span class="lili">UDV</span></a></li>
+                      <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+               
+            </ul>
+           
+        </nav>
+      </header>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-premium/perfil-hombre-dibujos-animados_18591-58482.jpg" class="" alt="Imagen 1">
+        <h1>Hombres</h1>
+        <div class="card-body">
+          <a href="/UDVindexH" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-premium/dibujos-animados-perfil-mujer_18591-58478.jpg" class="card-img-top" alt="Imagen 2">
+        <h1>Mujeres</h1>
+        <div class="card-body">
+          <a href="enlace2.html" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-premium/perfil-hombre-dibujos-animados_18591-58484.jpg" class="card-img-top" alt="Imagen 3">
+        <h1>Jóvenes</h1>
+        <div class="card-body">
+          <a href="enlace3.html" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="abajo"></div>
+
+</body>
+</html>

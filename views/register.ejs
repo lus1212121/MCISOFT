@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+ <style>
+    body {
+      background-color: #181818;
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 60px);
+      
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background-color: rgba(43, 43, 43, 0.822);
+      border-radius: 5px;
+      margin: 30px;
+      box-shadow: 0 15px 35px rgb(0, 0, 0);
+      margin-top: 45px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .select{
+      color: #353535;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #353535;
+      border-radius: 3px;
+      background-color: rgba(53, 53, 53, 0.822);
+      color: white;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      border-color: #fcfdff;
+    }
+    .form-group .in{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #353535;
+      border-radius: 3px;
+      background-color: rgba(53, 53, 53, 0.822);
+      color: #fcfdff;
+    }
+    
+    .form-group .in:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      border-color: #fcfdff;
+    }
+    .btn-login {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      border: none;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+
+    .btn-login:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      border-color: #fcfdff;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #353535;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+     }
+    .h2, h2 {
+      font-size: 2rem;
+     display: flex;
+     justify-content: center;
+    }
+    .logo{
+     width: 80px;
+    }
+    @media (max-width: 575px) {
+      .login-container {
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <form class="login-form" action="/register" method="post" ">
+      <h2 class="mb-4"> <img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" class="logo" alt=""></h2>
+      <div class="form-group">
+        <label for="nom">Nombre</label>
+        <input type="text" id="nom" name="nom" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+      </div>
+      <div class="form-group">
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" name="pass" placeholder="Contraseña">
+      </div>
+      <div class="form-group">
+        <label for="rol">Rol</label>
+        <select class="form-select in"  id="rol" name="rol" placeholder="rol">
+          <option selected>- Seleccione -</option>
+          <option value="1">admin</option>
+          <option value="2">Contaduría</option>
+          <option value="3">UDV admin</option>
+          <option value="4">CapacitacionD admin</option>
+          <option value="5">eventos admin</option>
+          <option value="6">Usuarios</option>
+        </select>     
+      </div>
+      <button type="submit" class="btn btn-login">Registrar</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 MCI B/manga. All rights reserved.</p>
+  </div>
+
+  <!-- Script para validación de formulario -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.login-form');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe de inmediato
+
+        // Obtener los valores de los campos del formulario
+        const nombre = document.getElementById('nom').value.trim();
+        const usuario = document.getElementById('usuario').value.trim();
+        const contraseña = document.getElementById('pass').value.trim();
+        const rol = document.getElementById('rol').value;
+
+        // Validar que los campos no estén vacíos
+        if (nombre === '' || usuario === '' || contraseña === '' || rol === '- Seleccione -') {
+          Swal.fire({
+            title: 'Error',
+            text: 'Por favor, complete todos los campos del formulario.',
+            icon: 'error',
+            showConfirmButton: false,
+            timer: 2000
+          });
+        } else {
+          // Si los campos están completos, enviar el formulario
+          form.submit();
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <% if (typeof alert != "undefined") { %>
+    <script>
+      swal.fire({
+        title: '<%= alertTitle %>',
+        text: '<%= alertMessage %>',
+        icon: '<%= alertIcon %>',
+        showConfirmButton: '<%= showConfirmButton %>',
+        timer:'<%= time %>',
+      }).then (()=>{
+        window.location = '/<%= ruta %> '
+      })
+    </script>
+  <% } %>
+  
+</body>
+</html>
