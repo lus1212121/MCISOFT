@@ -64,6 +64,9 @@ node_modules/
 
 # dotenv environment variables file
 .env
+<<<<<<< HEAD
 
 
 /connection.json/
+=======
+>>>>>>> 12fcc71f1a5feefa13771f325e558783b20ec5b6

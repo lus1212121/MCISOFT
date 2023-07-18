@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "mci2",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +7,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon index.js"
+=======
+  "name": "mci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js",
+    "start": "nodemon app.js"
+
+>>>>>>> 12fcc71f1a5feefa13771f325e558783b20ec5b6
   },
   "keywords": [],
   "author": "",
@@ -13,7 +25,11 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+<<<<<<< HEAD
     "dotenv": "^16.3.1",
+=======
+    "dotenv": "^16.0.3",
+>>>>>>> 12fcc71f1a5feefa13771f325e558783b20ec5b6
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
@@ -21,10 +37,16 @@
     "gh-pages": "^5.0.0",
     "jimp": "^0.22.8",
     "mysql": "^2.18.1",
+<<<<<<< HEAD
     "mysql2": "^3.5.2",
     "nodemon": "^3.0.1",
     "path": "^0.12.7",
     "sharp": "^0.32.3"
+=======
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "sharp": "^0.32.1"
+>>>>>>> 12fcc71f1a5feefa13771f325e558783b20ec5b6
   },
   "devDependencies": {
     "ejs-cli": "^2.2.3"
