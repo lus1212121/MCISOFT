@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "functions": [
     {
       "source": "functions",
@@ -17,18 +16,13 @@
   ],
   "hosting": {
     "public": "public",
-=======
-  "hosting": {
-    "public": "public",
     "rewrites": [
       {
         "source": "**",
         "function": "app"
       }
     ],
->>>>>>> 12fcc71f1a5feefa13771f325e558783b20ec5b6
     "ignore": [
-      "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
