@@ -8,14 +8,17 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 // Configuración para servir archivos estáticos
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
 
 // local host//
 
 app.use('/', require('./routes/index'));
 
+app.listen(80, ()=>{
+    console.log('servicio http');
+});
 
-app.listen(9001, ()=>{
-    console.log('servicio');
+app.listen(443, ()=>{
+    console.log('servicio https');
 });
