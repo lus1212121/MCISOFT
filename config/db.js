@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 // require('dotenv').config();
-const connection = require('./connection.json')
+const connection = require('./connection.json');
 
 const conexion = mysql.createConnection({
     host: connection.HOST1,
