@@ -18,7 +18,3 @@ app.use('/', require('./routes/index'));
 app.listen(constants.HTTP_PORT, constants.IP, () => {
   console.log('servicio http');
 });
-
-app.listen(constants.HTTPS_PORT, constants.IP, () => {
-  console.log('servicio https');
-});
