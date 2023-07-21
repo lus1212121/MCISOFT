@@ -15,6 +15,10 @@ app.use(bodyParser.json());
 
 app.use('/', require('./routes/index'));
 
+app.listen(constants.HTTPS_PORT, constants.IP, () => {
+  console.log('servicio https');
+});
+
 app.listen(constants.HTTP_PORT, constants.IP, () => {
   console.log('servicio http');
 });
