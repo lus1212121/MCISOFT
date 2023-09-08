@@ -1,8 +1,11 @@
 const conexion = require('../config/db');
 
+<<<<<<< HEAD
 
 // hombres sistema //
 
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 exports.save = (req, res) => {
   const nombre = req.body.nombre;
   const edad = req.body.edad;
@@ -15,6 +18,7 @@ exports.save = (req, res) => {
   const pago = req.body.pago;
   const forma = req.body.forma;
   const recibo = req.body.recibo;
+<<<<<<< HEAD
   const ciclo = req.body.ciclo;
   const a1 = req.body.a1;
   const t1 = req.body.t1;
@@ -30,6 +34,8 @@ exports.save = (req, res) => {
   const a6 = req.body.a6;
   const t6 = req.body.t6;
   const bautismo = req.body.bautismo;
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
   conexion().query(
     'INSERT INTO infoMinisterio SET ?',
@@ -45,6 +51,7 @@ exports.save = (req, res) => {
       pago: pago,
       recibo: recibo,
       forma: forma,
+<<<<<<< HEAD
       ciclo:ciclo,
       a1:a1,
       t1:t1,
@@ -60,12 +67,18 @@ exports.save = (req, res) => {
       a6:a6,
       t6:t6,
       bautismo:bautismo,
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
     },
     (error, results) => {
       if (error) {
         console.log(error);
       } else {
+<<<<<<< HEAD
         res.redirect('/Exitoso');
+=======
+        res.redirect('/UDVindexH');
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
       }
     },
   );
@@ -84,12 +97,16 @@ exports.update = (req, res) => {
   const pago = req.body.pago;
   const forma = req.body.forma;
   const recibo = req.body.recibo;
+<<<<<<< HEAD
   const ciclo = req.body.ciclo;
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
   conexion().query(
     'UPDATE infoMinisterio SET ? WHERE id = ?',
     [
       {
+<<<<<<< HEAD
       nombre: nombre,
       edad: edad,
       documento: documento,
@@ -102,6 +119,19 @@ exports.update = (req, res) => {
         recibo: recibo,
         forma: forma,
         ciclo:ciclo,
+=======
+        nombre: nombre,
+        edad: edad,
+        documento: documento,
+        telefono: telefono,
+        fecha: fecha,
+        lider12: lider12,
+        lider144: lider144,
+        liderCelula: liderCelula,
+        pago: pago,
+        recibo: recibo,
+        forma: forma,
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
       },
       id,
     ],
@@ -114,6 +144,7 @@ exports.update = (req, res) => {
     },
   );
 };
+<<<<<<< HEAD
 
 
 exports.updateA = (req, res) => {
@@ -808,3 +839,5 @@ exports.updateA2 = (req, res) => {
     },
   );
 };
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2

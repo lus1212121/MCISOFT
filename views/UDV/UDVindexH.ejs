@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
     <title>UDV Inscritos H</title>
     <link rel="icon" href="https://mci12.com/wp-content/uploads/2019/08/mci-logo.png" type="image/png">
+=======
+    <title>UDV inscritos</title>
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"> -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -13,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.bootstrap5.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+<<<<<<< HEAD
    <%- include('../partials/styleTable.ejs') %>
     
 
@@ -27,6 +32,389 @@
    <%- include('../partials/ciclo.ejs') %>     
               
              <div class="container-fluid table-responsive table-striped ">
+=======
+  <style>
+
+    
+
+      table.dataTable thead {
+              background-color:#178f45;
+              color:aliceblue;
+          }  
+
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body{
+
+
+    color: rgb(0, 0, 0);
+}
+
+.header{
+    color: white;
+    background-color:  rgb(34, 34, 34);
+
+}
+.logo img{
+
+    width: auto;
+    margin-top: auto;
+}
+
+.cartas{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.carta{
+    width: 300px;
+    background: rgb(34, 34, 34);
+    margin: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+img{
+    width: 100px;
+    margin-top: 30px;
+
+}
+
+.carta a{
+    background-color:  rgb(61, 61, 177) ;
+  padding: 15px;
+  margin: 20PX;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.carta a:hover {
+    background-color: white;
+    color: rgb(61, 61, 177);
+    transform: scale(1.1);
+
+}
+.logo img {width: 60px;}
+
+.header li{
+    display: inline-block;
+    padding: 0 20px;
+    
+    cursor: pointer;
+}
+.header li:hover{
+   transform: scale(1.1);
+}
+.header a{
+    font-size: 700;
+    text-decoration: none;
+}
+.header li:hover{
+    color:   rgb(253, 253, 255);
+}
+.header button{
+    margin-left: 20px;
+    font-weight: 700;
+    color:  white;
+    padding: 9px 25px;
+    background: rgb(65, 65, 224);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+}
+
+
+.header button:hover {
+    background-color: white;
+    color: rgb(61, 61, 177);
+    transform: scale(1.1);
+}
+h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.nav-bar {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 10px 10px;
+    cursor: pointer;
+
+}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.sola {
+    display: none;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+.laa{
+    color: rgb(61, 61, 177);
+    display: none;
+}
+#check {display: none;}
+
+.PEPI{
+    
+    color: white;
+
+}
+.pipi{
+    color: rgb(255, 255, 255);
+}
+.pipo{
+    color: green;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.container{
+    max-width: 10000000px;
+}
+.table{
+    background-color: #178f45;
+}
+table.table-bordered.dataTable thead tr:first-child th, table.table-bordered.dataTable thead tr:first-child td {
+    text-align: center;
+}
+.span{
+    color: red;
+}
+
+@media(max-width: 900px){
+.laa{
+    display: flex;
+
+}
+.PEPI{
+    display: none;
+}
+.topo{
+  display: flex;
+}
+.pipi{
+    display: none;
+}
+.menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.2s ease-in-out;
+    
+
+}
+
+
+.po{
+  display: none;
+}
+.menu li a:hover{
+
+
+transform: scale(1.1);
+
+}
+.papa{
+  display: flex;
+  color: red;
+}
+
+.sola{
+    display: block;
+}
+.menu li {margin-top: 40px;}
+.menu li a {padding: 10px;
+    font-size: 20px;
+  color: white;}
+.open-menu , .close-menu {display: block;}
+#check:checked ~ .menu {right: 0;}
+.button{
+display: none;
+}
+@media (max-width: 900px){
+.menu li a {
+    padding: 10px;
+    font-size: 20px;
+}}
+.salir{
+
+color: red;
+padding: 8px;
+background-color: white;
+border-radius: 20%;
+margin: 15px;
+
+}
+.red{
+color: red;
+font-weight: bold;
+}
+.lol{
+    font-size: 2.9rem;
+}}
+.salir{
+
+color: red;
+padding: 8px;
+background-color: white;
+border-radius: 20%;
+
+
+}
+.red{
+color: red;
+font-weight: bold;
+}
+
+div.dt-buttons {
+    position: initial;
+    margin-top: 20px;
+}
+.label{
+    margin-top: 20px;
+}
+.li{
+    margin-top: 10px;
+    border: 1 rem;
+    border-color: rgb(179, 179, 179);
+}
+  </style>
+    
+
+</head>
+<body>
+      <% if (rol === '1') { %>
+        <body>
+            <header class="header">
+                <nav>
+                    <ul class='nav-bar'>
+                        <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                        <input type='checkbox' id='check' />
+                        <button class="button" id="lu">INICIO</button>
+                        <span class="menu">
+              
+                            <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                            <li><a href="">Soporte</a></li>
+                            <li><a href="">Visión G12</a></li>
+                              <li ><a href="#">ZONA <span class="lili">UDV H Admin</span></a></li>
+                              <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                        
+                            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        </span>
+                        <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+                       
+                    </ul>
+                   
+                </nav>
+              </header>
+              
+            
+                 <div class="container" class="mt-0">
+                    <a href="/UDVcreateH" class="btn pop btn-primary mt-4 mb-4"><i class="bi bi-person-lines-fill"></i> Crear </a>
+                 </div>
+            
+         <div class="container totali"  >
+             <div class="row">
+                 <div class="col">
+                   <button type="button" class="btn btn-primary">
+                     Total: <span id="total"  class="badge badge-light"></span>
+                     </button>
+                     <br>
+                 </div>
+             </div>
+            </div> 
+            
+            <div class="container " >
+                <div class="row">
+                  <div class="col">
+                    <label for="year" class="label btn btn-primary">Seleccionar año:</label> <br>
+                    <select id="year" class="form-select li">
+                      <option value="">Todos</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <!-- Agrega más opciones para años adicionales si es necesario -->
+                    </select>
+                  </div>
+                </div>
+              </div>       
+              
+              <div class="container-fluid table-responsive table-striped ">
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                 <div class="row">
                     <div class="col">     
                        <table id="calmo" class="table table-bordered  text-center " style="width:100%">
@@ -43,8 +431,12 @@
                             <th scope="col">Pago</th>
                             <th scope="col">N°Recibo</th>
                             <th scope="col">Forma°P</th>
+<<<<<<< HEAD
                             <th scope="col">Ciclo</th>
                             <th scope="col">Fecha
+=======
+                            <th scope="col">Fecha</th>
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                             <th scope="col">Acciones</th>
                           </tr>
                        </thead>
@@ -62,7 +454,10 @@
                                 <td ><%= infoMinisterio.pago %></td>
                                 <td ><%= infoMinisterio.recibo %></td>
                                 <td ><%= infoMinisterio.forma %></td>
+<<<<<<< HEAD
                                 <td ><%= infoMinisterio.ciclo %></td>
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                                 <td ><%= infoMinisterio.fecha %></td>
                                 <td>
                                     <a href="/UDVedit/<%= infoMinisterio.id %>" class="btn btn-outline-info mb-2" onclick="confirmar('<%= infoMinisterio.id %>');"><i class="bi bi-pencil-square"></i></a> 
@@ -89,13 +484,308 @@
             <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
             <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
     
+<<<<<<< HEAD
             <%- include('../partials/dataTable.ejs') %>
 
+=======
+            
+            
+        
+            
+
+
+
+            <script>
+                
+         $(document).ready(function () {
+            var tabla = $('#calmo').DataTable({
+              "createdRow": function(row, data, index){
+                if(data [8] == 0 || data[8] == "- Seleccione -"){
+                    $('td', row).css({
+                        'background-color': '#FFA984',
+                    })
+                }
+              },
+        
+              dom: "Bfrtilp",
+              buttons: [{
+                extend: 'excelHtml5',
+                text: "<i class='fa-sharp fa-solid fa-file-excel'></i>",
+                titleAttr: 'Exportar a Excel',
+                className: 'btn btn-success'
+              },
+              { extend: 'pdfHtml5',
+                text: "<i class='fa-sharp fa-solid fa-file-pdf'></i>",
+                titleAttr: 'Exportar a PDF',
+                className: 'btn btn-danger'
+              },
+              {
+                extend: 'print',
+                text: "<i class='fa-sharp fa-solid fa-print'></i>",
+                titleAttr: 'Imprimir',
+                className: 'btn btn-info'
+              }
+            ],
+        
+              language: {
+            "processing": "Procesando...",
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+            "search": "Buscar:",
+            "infoThousands": ",",
+            "loadingRecords": "Cargando...",
+            "paginate": {
+                "first": "Primero",
+                "last": "Último",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+            },
+            "buttons": {
+                "copy": "Copiar",
+                "colvis": "Visibilidad",
+                "collection": "Colección",
+                "colvisRestore": "Restaurar visibilidad",
+                "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                "copySuccess": {
+                    "1": "Copiada 1 fila al portapapeles",
+                    "_": "Copiadas %ds fila al portapapeles"
+                },
+                "copyTitle": "Copiar al portapapeles",
+                "csv": "CSV",
+                "excel": "Excel",
+                "pageLength": {
+                    "-1": "Mostrar todas las filas",
+                    "_": "Mostrar %d filas"
+                },
+                "pdf": "PDF",
+                "print": "Imprimir",
+                "renameState": "Cambiar nombre",
+                "updateState": "Actualizar",
+                "createState": "Crear Estado",
+                "removeAllStates": "Remover Estados",
+                "removeState": "Remover",
+                "savedStates": "Estados Guardados",
+                "stateRestore": "Estado %d"
+            },
+            "autoFill": {
+                "cancel": "Cancelar",
+                "fill": "Rellene todas las celdas con <i>%d<\/i>",
+                "fillHorizontal": "Rellenar celdas horizontalmente",
+                "fillVertical": "Rellenar celdas verticalmentemente"
+            },
+            "decimal": ",",
+            "searchBuilder": {
+                "add": "Añadir condición",
+                "button": {
+                    "0": "Constructor de búsqueda",
+                    "_": "Constructor de búsqueda (%d)"
+                },
+                "clearAll": "Borrar todo",
+                "condition": "Condición",
+                "conditions": {
+                    "date": {
+                        "after": "Despues",
+                        "before": "Antes",
+                        "between": "Entre",
+                        "empty": "Vacío",
+                        "equals": "Igual a",
+                        "notBetween": "No entre",
+                        "notEmpty": "No Vacio",
+                        "not": "Diferente de"
+                    },
+                    "number": {
+                        "between": "Entre",
+                        "empty": "Vacio",
+                        "equals": "Igual a",
+                        "gt": "Mayor a",
+                        "gte": "Mayor o igual a",
+                        "lt": "Menor que",
+                        "lte": "Menor o igual que",
+                        "notBetween": "No entre",
+                        "notEmpty": "No vacío",
+                        "not": "Diferente de"
+                    },
+                    "string": {
+                        "contains": "Contiene",
+                        "empty": "Vacío",
+                        "endsWith": "Termina en",
+                        "equals": "Igual a",
+                        "notEmpty": "No Vacio",
+                        "startsWith": "Empieza con",
+                        "not": "Diferente de",
+                        "notContains": "No Contiene",
+                        "notStartsWith": "No empieza con",
+                        "notEndsWith": "No termina con"
+                    },
+                    "array": {
+                        "not": "Diferente de",
+                        "equals": "Igual",
+                        "empty": "Vacío",
+                        "contains": "Contiene",
+                        "notEmpty": "No Vacío",
+                        "without": "Sin"
+                    }
+                },
+                "data": "Data",
+                "deleteTitle": "Eliminar regla de filtrado",
+                "leftTitle": "Criterios anulados",
+                "logicAnd": "Y",
+                "logicOr": "O",
+                "rightTitle": "Criterios de sangría",
+                "title": {
+                    "0": "Constructor de búsqueda",
+                    "_": "Constructor de búsqueda (%d)"
+                },
+                "value": "Valor"
+            },
+            "searchPanes": {
+                "clearMessage": "Borrar todo",
+                "collapse": {
+                    "0": "Paneles de búsqueda",
+                    "_": "Paneles de búsqueda (%d)"
+                },
+                "count": "{total}",
+                "countFiltered": "{shown} ({total})",
+                "emptyPanes": "Sin paneles de búsqueda",
+                "loadMessage": "Cargando paneles de búsqueda",
+                "title": "Filtros Activos - %d",
+                "showMessage": "Mostrar Todo",
+                "collapseMessage": "Colapsar Todo"
+            },
+            "select": {
+                "cells": {
+                    "1": "1 celda seleccionada",
+                    "_": "%d celdas seleccionadas"
+                },
+                "columns": {
+                    "1": "1 columna seleccionada",
+                    "_": "%d columnas seleccionadas"
+                },
+                "rows": {
+                    "1": "1 fila seleccionada",
+                    "_": "%d filas seleccionadas"
+                }
+            },
+            "thousands": ".",
+            "datetime": {
+                "previous": "Anterior",
+                "next": "Proximo",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos",
+                "unknown": "-",
+                "amPm": [
+                    "AM",
+                    "PM"
+                ],
+                "months": {
+                    "0": "Enero",
+                    "1": "Febrero",
+                    "10": "Noviembre",
+                    "11": "Diciembre",
+                    "2": "Marzo",
+                    "3": "Abril",
+                    "4": "Mayo",
+                    "5": "Junio",
+                    "6": "Julio",
+                    "7": "Agosto",
+                    "8": "Septiembre",
+                    "9": "Octubre"
+                },
+                "weekdays": [
+                    "Dom",
+                    "Lun",
+                    "Mar",
+                    "Mie",
+                    "Jue",
+                    "Vie",
+                    "Sab"
+                ]
+            },
+            "editor": {
+                "close": "Cerrar",
+                "create": {
+                    "button": "Nuevo",
+                    "title": "Crear Nuevo Registro",
+                    "submit": "Crear"
+                },
+                "edit": {
+                    "button": "Editar",
+                    "title": "Editar Registro",
+                    "submit": "Actualizar"
+                },
+                "remove": {
+                    "button": "Eliminar",
+                    "title": "Eliminar Registro",
+                    "submit": "Eliminar",
+                    "confirm": {
+                        "_": "¿Está seguro que desea eliminar %d filas?",
+                        "1": "¿Está seguro que desea eliminar 1 fila?"
+                    }
+                },
+                "error": {
+                    "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+                },
+                "multi": {
+                    "title": "Múltiples Valores",
+                    "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+                    "restore": "Deshacer Cambios",
+                    "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+                }
+            },
+            "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+            "stateRestore": {
+                "creationModal": {
+                    "button": "Crear",
+                    "name": "Nombre:",
+                    "order": "Clasificación",
+                    "paging": "Paginación",
+                    "search": "Busqueda",
+                    "select": "Seleccionar",
+                    "columns": {
+                        "search": "Búsqueda de Columna",
+                        "visible": "Visibilidad de Columna"
+                    },
+                    "title": "Crear Nuevo Estado",
+                    "toggleLabel": "Incluir:"
+                },
+                "emptyError": "El nombre no puede estar vacio",
+                "removeConfirm": "¿Seguro que quiere eliminar este %s?",
+                "removeError": "Error al eliminar el registro",
+                "removeJoiner": "y",
+                "removeSubmit": "Eliminar",
+                "renameButton": "Cambiar Nombre",
+                "renameLabel": "Nuevo nombre para %s",
+                "duplicateError": "Ya existe un Estado con este nombre.",
+                "emptyStates": "No hay Estados guardados",
+                "removeTitle": "Remover Estado",
+                "renameTitle": "Cambiar Nombre Estado"
+            }}
+            })
+            $('#year').on('change', function () {
+            var selectedYear = $(this).val();
+            tabla.column(11).search(selectedYear, true, false).draw();
+          });
+          });
+           
+            </script>
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
             <script>
                 
                 $(document).ready(function() {
                   var total = 0;
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                   $('#calmo tbody tr').each(function() {
                     var valor = parseInt($(this).find('td:eq(8)').text());
                     if (!isNaN(valor)) {
@@ -105,6 +795,7 @@
               
                   var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
                   $('#total').text(totalFormatted);
+<<<<<<< HEAD
 
 
                 });  
@@ -121,6 +812,932 @@
                 <%- include('../partials/lider12.ejs') %>   
                 <%- include('../partials/fecha.ejs') %>     
                   <%- include('../partials/ciclo.ejs') %>   
+=======
+                });
+                
+        
+            
+          </script>
+        
+      
+        
+          </body>
+        </html>
+        
+        
+        </body>
+
+     <% } else if (rol === '2') { %>
+        <body>
+            <header class="header">
+                <nav>
+                    <ul class='nav-bar'>
+                        <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                        <input type='checkbox' id='check' />
+                        <button class="button">INICIO</button>
+                        <span class="menu">
+              
+                            <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                            <li><a href="">Soporte</a></li>
+                            <li><a href="">Visión G12</a></li>
+                              <li ><a href="#">ZONA <span class="lili">UDV H Contaduría</span></a></li>
+                              <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                        
+                            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        </span>
+                        <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+                       
+                    </ul>
+                   
+                </nav>
+              </header>
+              
+            
+                 <div class="container" class="mt-0">
+                    <a href="/UDVcreateH" class="btn pop btn-primary mt-4 mb-4"><i class="bi bi-person-lines-fill"></i> Crear </a>
+                 </div>
+            
+         <div class="container totali"  >
+             <div class="row">
+                 <div class="col">
+                   <button type="button" class="btn btn-primary">
+                     Total: <span id="total"  class="badge badge-light"></span>
+                     </button>
+                     <br>
+                 </div>
+             </div>
+            </div> 
+            
+            <div class="container " >
+                <div class="row">
+                  <div class="col">
+                    <label for="year" class="label btn btn-primary">Seleccionar año:</label> <br>
+                    <select id="year" class="form-select li">
+                      <option value="">Todos</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <!-- Agrega más opciones para años adicionales si es necesario -->
+                    </select>
+                  </div>
+                </div>
+              </div>       
+              
+              <div class="container-fluid table-responsive table-striped ">
+                <div class="row">
+                    <div class="col">     
+                       <table id="calmo" class="table table-bordered  text-center " style="width:100%">
+                       <thead >
+                        <tr class="text-white ">
+                            <th scope="col">ID</th>
+                            <th scope="col">Documento</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Líder°12</th> 
+                            <th scope="col">Líder°144</th>
+                            <th scope="col">Líder°Célula</th>
+                            <th scope="col">Pago</th>
+                            <th scope="col">N°Recibo</th>
+                            <th scope="col">Forma°P</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Acciones</th>
+                          </tr>
+                       </thead>
+                       <tbody class="text-black bg-white">
+                        <% results.forEach((infoMinisterio)=>{ %>
+                            <tr class="bg-light ">
+                                <td><%= infoMinisterio.id %></td>
+                                <td><%= infoMinisterio.documento %></td>
+                                <td ><%= infoMinisterio.nombre %></td>
+                                <td ><%= infoMinisterio.edad %></td>
+                                <td ><%= infoMinisterio.telefono %></td>
+                                <td ><%= infoMinisterio.lider12 %></td>
+                                <td ><%= infoMinisterio.lider144 %></td>
+                                <td ><%= infoMinisterio.liderCelula %></td>
+                                <td ><%= infoMinisterio.pago %></td>
+                                <td ><%= infoMinisterio.recibo %></td>
+                                <td ><%= infoMinisterio.forma %></td>
+                                <td ><%= infoMinisterio.fecha %></td>
+                                <td>
+                                    <a href="/UDVedit/<%= infoMinisterio.id %>" class="btn btn-outline-info mb-2" onclick="confirmar('<%= infoMinisterio.id %>');"><i class="bi bi-pencil-square"></i></a> 
+                                </td>
+                            </tr>
+                        <% }) %>
+                       </tbody>
+                       
+                    </div>
+                </div>
+            </div>
+             
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+            <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+            <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+            <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+            <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+            <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+    
+            
+            
+        
+            
+
+
+
+            <script>
+                
+         $(document).ready(function () {
+            var tabla = $('#calmo').DataTable({
+              "createdRow": function(row, data, index){
+                if(data [8] == 0 || data[8] == "- Seleccione -"){
+                    $('td', row).css({
+                        'background-color': '#FFA984',
+                    })
+                }
+              },
+        
+              dom: "Bfrtilp",
+              buttons: [{
+                extend: 'excelHtml5',
+                text: "<i class='fa-sharp fa-solid fa-file-excel'></i>",
+                titleAttr: 'Exportar a Excel',
+                className: 'btn btn-success'
+              },
+              { extend: 'pdfHtml5',
+                text: "<i class='fa-sharp fa-solid fa-file-pdf'></i>",
+                titleAttr: 'Exportar a PDF',
+                className: 'btn btn-danger'
+              },
+              {
+                extend: 'print',
+                text: "<i class='fa-sharp fa-solid fa-print'></i>",
+                titleAttr: 'Imprimir',
+                className: 'btn btn-info'
+              }
+            ],
+        
+              language: {
+            "processing": "Procesando...",
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+            "search": "Buscar:",
+            "infoThousands": ",",
+            "loadingRecords": "Cargando...",
+            "paginate": {
+                "first": "Primero",
+                "last": "Último",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+            },
+            "buttons": {
+                "copy": "Copiar",
+                "colvis": "Visibilidad",
+                "collection": "Colección",
+                "colvisRestore": "Restaurar visibilidad",
+                "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                "copySuccess": {
+                    "1": "Copiada 1 fila al portapapeles",
+                    "_": "Copiadas %ds fila al portapapeles"
+                },
+                "copyTitle": "Copiar al portapapeles",
+                "csv": "CSV",
+                "excel": "Excel",
+                "pageLength": {
+                    "-1": "Mostrar todas las filas",
+                    "_": "Mostrar %d filas"
+                },
+                "pdf": "PDF",
+                "print": "Imprimir",
+                "renameState": "Cambiar nombre",
+                "updateState": "Actualizar",
+                "createState": "Crear Estado",
+                "removeAllStates": "Remover Estados",
+                "removeState": "Remover",
+                "savedStates": "Estados Guardados",
+                "stateRestore": "Estado %d"
+            },
+            "autoFill": {
+                "cancel": "Cancelar",
+                "fill": "Rellene todas las celdas con <i>%d<\/i>",
+                "fillHorizontal": "Rellenar celdas horizontalmente",
+                "fillVertical": "Rellenar celdas verticalmentemente"
+            },
+            "decimal": ",",
+            "searchBuilder": {
+                "add": "Añadir condición",
+                "button": {
+                    "0": "Constructor de búsqueda",
+                    "_": "Constructor de búsqueda (%d)"
+                },
+                "clearAll": "Borrar todo",
+                "condition": "Condición",
+                "conditions": {
+                    "date": {
+                        "after": "Despues",
+                        "before": "Antes",
+                        "between": "Entre",
+                        "empty": "Vacío",
+                        "equals": "Igual a",
+                        "notBetween": "No entre",
+                        "notEmpty": "No Vacio",
+                        "not": "Diferente de"
+                    },
+                    "number": {
+                        "between": "Entre",
+                        "empty": "Vacio",
+                        "equals": "Igual a",
+                        "gt": "Mayor a",
+                        "gte": "Mayor o igual a",
+                        "lt": "Menor que",
+                        "lte": "Menor o igual que",
+                        "notBetween": "No entre",
+                        "notEmpty": "No vacío",
+                        "not": "Diferente de"
+                    },
+                    "string": {
+                        "contains": "Contiene",
+                        "empty": "Vacío",
+                        "endsWith": "Termina en",
+                        "equals": "Igual a",
+                        "notEmpty": "No Vacio",
+                        "startsWith": "Empieza con",
+                        "not": "Diferente de",
+                        "notContains": "No Contiene",
+                        "notStartsWith": "No empieza con",
+                        "notEndsWith": "No termina con"
+                    },
+                    "array": {
+                        "not": "Diferente de",
+                        "equals": "Igual",
+                        "empty": "Vacío",
+                        "contains": "Contiene",
+                        "notEmpty": "No Vacío",
+                        "without": "Sin"
+                    }
+                },
+                "data": "Data",
+                "deleteTitle": "Eliminar regla de filtrado",
+                "leftTitle": "Criterios anulados",
+                "logicAnd": "Y",
+                "logicOr": "O",
+                "rightTitle": "Criterios de sangría",
+                "title": {
+                    "0": "Constructor de búsqueda",
+                    "_": "Constructor de búsqueda (%d)"
+                },
+                "value": "Valor"
+            },
+            "searchPanes": {
+                "clearMessage": "Borrar todo",
+                "collapse": {
+                    "0": "Paneles de búsqueda",
+                    "_": "Paneles de búsqueda (%d)"
+                },
+                "count": "{total}",
+                "countFiltered": "{shown} ({total})",
+                "emptyPanes": "Sin paneles de búsqueda",
+                "loadMessage": "Cargando paneles de búsqueda",
+                "title": "Filtros Activos - %d",
+                "showMessage": "Mostrar Todo",
+                "collapseMessage": "Colapsar Todo"
+            },
+            "select": {
+                "cells": {
+                    "1": "1 celda seleccionada",
+                    "_": "%d celdas seleccionadas"
+                },
+                "columns": {
+                    "1": "1 columna seleccionada",
+                    "_": "%d columnas seleccionadas"
+                },
+                "rows": {
+                    "1": "1 fila seleccionada",
+                    "_": "%d filas seleccionadas"
+                }
+            },
+            "thousands": ".",
+            "datetime": {
+                "previous": "Anterior",
+                "next": "Proximo",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos",
+                "unknown": "-",
+                "amPm": [
+                    "AM",
+                    "PM"
+                ],
+                "months": {
+                    "0": "Enero",
+                    "1": "Febrero",
+                    "10": "Noviembre",
+                    "11": "Diciembre",
+                    "2": "Marzo",
+                    "3": "Abril",
+                    "4": "Mayo",
+                    "5": "Junio",
+                    "6": "Julio",
+                    "7": "Agosto",
+                    "8": "Septiembre",
+                    "9": "Octubre"
+                },
+                "weekdays": [
+                    "Dom",
+                    "Lun",
+                    "Mar",
+                    "Mie",
+                    "Jue",
+                    "Vie",
+                    "Sab"
+                ]
+            },
+            "editor": {
+                "close": "Cerrar",
+                "create": {
+                    "button": "Nuevo",
+                    "title": "Crear Nuevo Registro",
+                    "submit": "Crear"
+                },
+                "edit": {
+                    "button": "Editar",
+                    "title": "Editar Registro",
+                    "submit": "Actualizar"
+                },
+                "remove": {
+                    "button": "Eliminar",
+                    "title": "Eliminar Registro",
+                    "submit": "Eliminar",
+                    "confirm": {
+                        "_": "¿Está seguro que desea eliminar %d filas?",
+                        "1": "¿Está seguro que desea eliminar 1 fila?"
+                    }
+                },
+                "error": {
+                    "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+                },
+                "multi": {
+                    "title": "Múltiples Valores",
+                    "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+                    "restore": "Deshacer Cambios",
+                    "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+                }
+            },
+            "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+            "stateRestore": {
+                "creationModal": {
+                    "button": "Crear",
+                    "name": "Nombre:",
+                    "order": "Clasificación",
+                    "paging": "Paginación",
+                    "search": "Busqueda",
+                    "select": "Seleccionar",
+                    "columns": {
+                        "search": "Búsqueda de Columna",
+                        "visible": "Visibilidad de Columna"
+                    },
+                    "title": "Crear Nuevo Estado",
+                    "toggleLabel": "Incluir:"
+                },
+                "emptyError": "El nombre no puede estar vacio",
+                "removeConfirm": "¿Seguro que quiere eliminar este %s?",
+                "removeError": "Error al eliminar el registro",
+                "removeJoiner": "y",
+                "removeSubmit": "Eliminar",
+                "renameButton": "Cambiar Nombre",
+                "renameLabel": "Nuevo nombre para %s",
+                "duplicateError": "Ya existe un Estado con este nombre.",
+                "emptyStates": "No hay Estados guardados",
+                "removeTitle": "Remover Estado",
+                "renameTitle": "Cambiar Nombre Estado"
+            }}
+            })
+            $('#year').on('change', function () {
+            var selectedYear = $(this).val();
+            tabla.column(11).search(selectedYear, true, false).draw();
+          });
+          });
+           
+            </script>
+            <script>
+                
+                $(document).ready(function() {
+                  var total = 0;
+              
+                  $('#calmo tbody tr').each(function() {
+                    var valor = parseInt($(this).find('td:eq(8)').text());
+                    if (!isNaN(valor)) {
+                      total += valor;
+                    }
+                  });
+              
+                  var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
+                  $('#total').text(totalFormatted);
+                });
+                
+        
+            
+          </script>
+        
+      
+        
+          </body>
+        </html>
+        
+        
+        </body>
+
+        <% } else if (rol === '3') { %>
+
+            <body>
+                <header class="header">
+                    <nav>
+                        <ul class='nav-bar'>
+                            <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                            <input type='checkbox' id='check' />
+                            <button class="button"><a href="">INICIO</a></button>
+                            <span class="menu">
+                  
+                                <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                                <li><a href="">Soporte</a></li>
+                                <li><a href="">Visión G12</a></li>
+                                  <li ><a href="#">ZONA <span class="lili">UDV H UDV admin</span></a></li>
+                                  <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                            
+                                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                            </span>
+                            <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+                           
+                        </ul>
+                       
+                    </nav>
+                  </header>
+                  
+                
+                     <div class="container" class="mt-0">
+                        <a href="/UDVcreateH" class="btn pop btn-primary mt-4 mb-4"><i class="bi bi-person-lines-fill"></i> Crear </a>
+                     </div>
+                
+             <div class="container totali"  >
+                 <div class="row">
+                     <div class="col">
+                       <button type="button" class="btn btn-primary">
+                         Total: <span id="total"  class="badge badge-light"></span>
+                         </button>
+                         <br>
+                     </div>
+                 </div>
+                </div> 
+                
+                <div class="container " >
+                    <div class="row">
+                      <div class="col">
+                        <label for="year" class="label btn btn-primary">Seleccionar año:</label> <br>
+                        <select id="year" class="form-select li">
+                          <option value="">Todos</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <!-- Agrega más opciones para años adicionales si es necesario -->
+                        </select>
+                      </div>
+                    </div>
+                  </div>       
+                  
+                  <div class="container-fluid table-responsive table-striped ">
+                    <div class="row">
+                        <div class="col">     
+                           <table id="calmo" class="table table-bordered  text-center " style="width:100%">
+                           <thead >
+                            <tr class="text-white ">
+                                <th scope="col">ID</th>
+                                <th scope="col">Documento</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Líder°12</th> 
+                                <th scope="col">Líder°144</th>
+                                <th scope="col">Líder°Célula</th>
+                                <th scope="col">Pago</th>
+                                <th scope="col">N°Recibo</th>
+                                <th scope="col">Forma°P</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Acciones</th>
+                              </tr>
+                           </thead>
+                           <tbody class="text-black bg-white">
+                            <% results.forEach((infoMinisterio)=>{ %>
+                                <tr class="bg-light ">
+                                    <td><%= infoMinisterio.id %></td>
+                                    <td><%= infoMinisterio.documento %></td>
+                                    <td ><%= infoMinisterio.nombre %></td>
+                                    <td ><%= infoMinisterio.edad %></td>
+                                    <td ><%= infoMinisterio.telefono %></td>
+                                    <td ><%= infoMinisterio.lider12 %></td>
+                                    <td ><%= infoMinisterio.lider144 %></td>
+                                    <td ><%= infoMinisterio.liderCelula %></td>
+                                    <td ><%= infoMinisterio.pago %></td>
+                                    <td ><%= infoMinisterio.recibo %></td>
+                                    <td ><%= infoMinisterio.forma %></td>
+                                    <td ><%= infoMinisterio.fecha %></td>
+                                    <td>
+                                        <a href="/UDVedit/<%= infoMinisterio.id %>" class="btn btn-outline-info mb-2" onclick="confirmar('<%= infoMinisterio.id %>');"><i class="bi bi-pencil-square"></i></a> 
+                                    </td>
+                                </tr>
+                            <% }) %>
+                           </tbody>
+                           
+                        </div>
+                    </div>
+                </div>
+                 
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+        
+                
+                
+            
+                
+    
+    
+    
+                <script>
+                    
+             $(document).ready(function () {
+                var tabla = $('#calmo').DataTable({
+                  "createdRow": function(row, data, index){
+                    if(data [8] == 0 || data[8] == "- Seleccione -"){
+                        $('td', row).css({
+                            'background-color': '#FFA984',
+                        })
+                    }
+                  },
+            
+                  dom: "Bfrtilp",
+                  buttons: [{
+                    extend: 'excelHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-excel'></i>",
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-success'
+                  },
+                  { extend: 'pdfHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-pdf'></i>",
+                    titleAttr: 'Exportar a PDF',
+                    className: 'btn btn-danger'
+                  },
+                  {
+                    extend: 'print',
+                    text: "<i class='fa-sharp fa-solid fa-print'></i>",
+                    titleAttr: 'Imprimir',
+                    className: 'btn btn-info'
+                  }
+                ],
+            
+                  language: {
+                "processing": "Procesando...",
+                "lengthMenu": "Mostrar _MENU_ registros",
+                "zeroRecords": "No se encontraron resultados",
+                "emptyTable": "Ningún dato disponible en esta tabla",
+                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "search": "Buscar:",
+                "infoThousands": ",",
+                "loadingRecords": "Cargando...",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                },
+                "aria": {
+                    "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad",
+                    "collection": "Colección",
+                    "colvisRestore": "Restaurar visibilidad",
+                    "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                    "copySuccess": {
+                        "1": "Copiada 1 fila al portapapeles",
+                        "_": "Copiadas %ds fila al portapapeles"
+                    },
+                    "copyTitle": "Copiar al portapapeles",
+                    "csv": "CSV",
+                    "excel": "Excel",
+                    "pageLength": {
+                        "-1": "Mostrar todas las filas",
+                        "_": "Mostrar %d filas"
+                    },
+                    "pdf": "PDF",
+                    "print": "Imprimir",
+                    "renameState": "Cambiar nombre",
+                    "updateState": "Actualizar",
+                    "createState": "Crear Estado",
+                    "removeAllStates": "Remover Estados",
+                    "removeState": "Remover",
+                    "savedStates": "Estados Guardados",
+                    "stateRestore": "Estado %d"
+                },
+                "autoFill": {
+                    "cancel": "Cancelar",
+                    "fill": "Rellene todas las celdas con <i>%d<\/i>",
+                    "fillHorizontal": "Rellenar celdas horizontalmente",
+                    "fillVertical": "Rellenar celdas verticalmentemente"
+                },
+                "decimal": ",",
+                "searchBuilder": {
+                    "add": "Añadir condición",
+                    "button": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "clearAll": "Borrar todo",
+                    "condition": "Condición",
+                    "conditions": {
+                        "date": {
+                            "after": "Despues",
+                            "before": "Antes",
+                            "between": "Entre",
+                            "empty": "Vacío",
+                            "equals": "Igual a",
+                            "notBetween": "No entre",
+                            "notEmpty": "No Vacio",
+                            "not": "Diferente de"
+                        },
+                        "number": {
+                            "between": "Entre",
+                            "empty": "Vacio",
+                            "equals": "Igual a",
+                            "gt": "Mayor a",
+                            "gte": "Mayor o igual a",
+                            "lt": "Menor que",
+                            "lte": "Menor o igual que",
+                            "notBetween": "No entre",
+                            "notEmpty": "No vacío",
+                            "not": "Diferente de"
+                        },
+                        "string": {
+                            "contains": "Contiene",
+                            "empty": "Vacío",
+                            "endsWith": "Termina en",
+                            "equals": "Igual a",
+                            "notEmpty": "No Vacio",
+                            "startsWith": "Empieza con",
+                            "not": "Diferente de",
+                            "notContains": "No Contiene",
+                            "notStartsWith": "No empieza con",
+                            "notEndsWith": "No termina con"
+                        },
+                        "array": {
+                            "not": "Diferente de",
+                            "equals": "Igual",
+                            "empty": "Vacío",
+                            "contains": "Contiene",
+                            "notEmpty": "No Vacío",
+                            "without": "Sin"
+                        }
+                    },
+                    "data": "Data",
+                    "deleteTitle": "Eliminar regla de filtrado",
+                    "leftTitle": "Criterios anulados",
+                    "logicAnd": "Y",
+                    "logicOr": "O",
+                    "rightTitle": "Criterios de sangría",
+                    "title": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "value": "Valor"
+                },
+                "searchPanes": {
+                    "clearMessage": "Borrar todo",
+                    "collapse": {
+                        "0": "Paneles de búsqueda",
+                        "_": "Paneles de búsqueda (%d)"
+                    },
+                    "count": "{total}",
+                    "countFiltered": "{shown} ({total})",
+                    "emptyPanes": "Sin paneles de búsqueda",
+                    "loadMessage": "Cargando paneles de búsqueda",
+                    "title": "Filtros Activos - %d",
+                    "showMessage": "Mostrar Todo",
+                    "collapseMessage": "Colapsar Todo"
+                },
+                "select": {
+                    "cells": {
+                        "1": "1 celda seleccionada",
+                        "_": "%d celdas seleccionadas"
+                    },
+                    "columns": {
+                        "1": "1 columna seleccionada",
+                        "_": "%d columnas seleccionadas"
+                    },
+                    "rows": {
+                        "1": "1 fila seleccionada",
+                        "_": "%d filas seleccionadas"
+                    }
+                },
+                "thousands": ".",
+                "datetime": {
+                    "previous": "Anterior",
+                    "next": "Proximo",
+                    "hours": "Horas",
+                    "minutes": "Minutos",
+                    "seconds": "Segundos",
+                    "unknown": "-",
+                    "amPm": [
+                        "AM",
+                        "PM"
+                    ],
+                    "months": {
+                        "0": "Enero",
+                        "1": "Febrero",
+                        "10": "Noviembre",
+                        "11": "Diciembre",
+                        "2": "Marzo",
+                        "3": "Abril",
+                        "4": "Mayo",
+                        "5": "Junio",
+                        "6": "Julio",
+                        "7": "Agosto",
+                        "8": "Septiembre",
+                        "9": "Octubre"
+                    },
+                    "weekdays": [
+                        "Dom",
+                        "Lun",
+                        "Mar",
+                        "Mie",
+                        "Jue",
+                        "Vie",
+                        "Sab"
+                    ]
+                },
+                "editor": {
+                    "close": "Cerrar",
+                    "create": {
+                        "button": "Nuevo",
+                        "title": "Crear Nuevo Registro",
+                        "submit": "Crear"
+                    },
+                    "edit": {
+                        "button": "Editar",
+                        "title": "Editar Registro",
+                        "submit": "Actualizar"
+                    },
+                    "remove": {
+                        "button": "Eliminar",
+                        "title": "Eliminar Registro",
+                        "submit": "Eliminar",
+                        "confirm": {
+                            "_": "¿Está seguro que desea eliminar %d filas?",
+                            "1": "¿Está seguro que desea eliminar 1 fila?"
+                        }
+                    },
+                    "error": {
+                        "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+                    },
+                    "multi": {
+                        "title": "Múltiples Valores",
+                        "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+                        "restore": "Deshacer Cambios",
+                        "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+                    }
+                },
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "stateRestore": {
+                    "creationModal": {
+                        "button": "Crear",
+                        "name": "Nombre:",
+                        "order": "Clasificación",
+                        "paging": "Paginación",
+                        "search": "Busqueda",
+                        "select": "Seleccionar",
+                        "columns": {
+                            "search": "Búsqueda de Columna",
+                            "visible": "Visibilidad de Columna"
+                        },
+                        "title": "Crear Nuevo Estado",
+                        "toggleLabel": "Incluir:"
+                    },
+                    "emptyError": "El nombre no puede estar vacio",
+                    "removeConfirm": "¿Seguro que quiere eliminar este %s?",
+                    "removeError": "Error al eliminar el registro",
+                    "removeJoiner": "y",
+                    "removeSubmit": "Eliminar",
+                    "renameButton": "Cambiar Nombre",
+                    "renameLabel": "Nuevo nombre para %s",
+                    "duplicateError": "Ya existe un Estado con este nombre.",
+                    "emptyStates": "No hay Estados guardados",
+                    "removeTitle": "Remover Estado",
+                    "renameTitle": "Cambiar Nombre Estado"
+                }}
+                })
+                $('#year').on('change', function () {
+                var selectedYear = $(this).val();
+                tabla.column(11).search(selectedYear, true, false).draw();
+              });
+              });
+               
+                </script>
+                <script>
+                    
+                    $(document).ready(function() {
+                      var total = 0;
+                  
+                      $('#calmo tbody tr').each(function() {
+                        var valor = parseInt($(this).find('td:eq(8)').text());
+                        if (!isNaN(valor)) {
+                          total += valor;
+                        }
+                      });
+                  
+                      var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
+                      $('#total').text(totalFormatted);
+                    });
+                    
+            
+                
+              </script>
+            
+          
+            
+              </body>
+            </html>
+            
+            
+            </body>
+
+        <% } else if (rol === '4' || rol === '5' ) { %>
+
+            <body>
+                <header class="header">
+                    <nav>
+                        <ul class='nav-bar'>
+                            <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                            <input type='checkbox' id='check' />
+                            <button class="button">INICIO</button>
+                            <span class="menu">
+                  
+                                <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                                <li><a href="">Soporte</a></li>
+                                <li><a href="">Visión G12</a></li>
+                                  <li ><a href="#">ZONA <span class="lili">UDV H Usuario</span></a></li>
+                                  <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                            
+                                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                            </span>
+                            <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+                           
+                        </ul>
+                       
+                    </nav>
+                  </header>
+                  
+                
+                     <div class="container" class="mt-0">
+                        <a href="/UDVcreateH" class="btn pop btn-primary mt-4 mb-4"><i class="bi bi-person-lines-fill"></i> Crear </a>
+                     </div>
+                
+                
+                <div class="container " >
+                    <div class="row">
+                      <div class="col">
+                        <label for="year" class="label btn btn-primary">Seleccionar año:</label> <br>
+                        <select id="year" class="form-select li">
+                          <option value="">Todos</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <!-- Agrega más opciones para años adicionales si es necesario -->
+                        </select>
+                      </div>
+                    </div>
+                  </div>       
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                   
                   <div class="container-fluid table-responsive table-striped ">
                     <div class="row">
@@ -137,7 +1754,10 @@
                                 <th scope="col">Líder°144</th>
                                 <th scope="col">Líder°Célula</th>
                                 <th scope="col" style="display: none;">Pago</th>
+<<<<<<< HEAD
                                 <th scope="col" style="display: none;">Ciclo</th>
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                                 <th scope="col">Fecha</th>
                               </tr>
                            </thead>
@@ -153,7 +1773,10 @@
                                     <td ><%= infoMinisterio.lider144 %></td>
                                     <td ><%= infoMinisterio.liderCelula %></td>
                                     <td style="display: none;"><%= infoMinisterio.pago %></td>
+<<<<<<< HEAD
                                     <td style="display: none;"><%= infoMinisterio.ciclo %></td>
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                                     <td ><%= infoMinisterio.fecha %></td>
                                 </tr>
                             <% }) %>
@@ -178,12 +1801,751 @@
                 <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
         
                 
+<<<<<<< HEAD
                 <%- include('../partials/dataTableUsuarios.ejs') %>
 
         
    
               </body>
       <% } else { %>
+=======
+                
+            
+                
+    
+    
+    
+                <script>
+                    
+             $(document).ready(function () {
+                var tabla = $('#calmo').DataTable({
+                  "createdRow": function(row, data, index){
+                    if(data [8] == 0 || data[8] == "- Seleccione -"){
+                        $('td', row).css({
+                            'background-color': '#FFA984',
+                        })
+                    }
+                  },
+            
+                  dom: "Bfrtilp",
+                  buttons: [{
+                    extend: 'excelHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-excel'></i>",
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-success'
+                  },
+                  { extend: 'pdfHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-pdf'></i>",
+                    titleAttr: 'Exportar a PDF',
+                    className: 'btn btn-danger'
+                  },
+                  {
+                    extend: 'print',
+                    text: "<i class='fa-sharp fa-solid fa-print'></i>",
+                    titleAttr: 'Imprimir',
+                    className: 'btn btn-info'
+                  }
+                ],
+            
+                  language: {
+                "processing": "Procesando...",
+                "lengthMenu": "Mostrar _MENU_ registros",
+                "zeroRecords": "No se encontraron resultados",
+                "emptyTable": "Ningún dato disponible en esta tabla",
+                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "search": "Buscar:",
+                "infoThousands": ",",
+                "loadingRecords": "Cargando...",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                },
+                "aria": {
+                    "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad",
+                    "collection": "Colección",
+                    "colvisRestore": "Restaurar visibilidad",
+                    "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                    "copySuccess": {
+                        "1": "Copiada 1 fila al portapapeles",
+                        "_": "Copiadas %ds fila al portapapeles"
+                    },
+                    "copyTitle": "Copiar al portapapeles",
+                    "csv": "CSV",
+                    "excel": "Excel",
+                    "pageLength": {
+                        "-1": "Mostrar todas las filas",
+                        "_": "Mostrar %d filas"
+                    },
+                    "pdf": "PDF",
+                    "print": "Imprimir",
+                    "renameState": "Cambiar nombre",
+                    "updateState": "Actualizar",
+                    "createState": "Crear Estado",
+                    "removeAllStates": "Remover Estados",
+                    "removeState": "Remover",
+                    "savedStates": "Estados Guardados",
+                    "stateRestore": "Estado %d"
+                },
+                "autoFill": {
+                    "cancel": "Cancelar",
+                    "fill": "Rellene todas las celdas con <i>%d<\/i>",
+                    "fillHorizontal": "Rellenar celdas horizontalmente",
+                    "fillVertical": "Rellenar celdas verticalmentemente"
+                },
+                "decimal": ",",
+                "searchBuilder": {
+                    "add": "Añadir condición",
+                    "button": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "clearAll": "Borrar todo",
+                    "condition": "Condición",
+                    "conditions": {
+                        "date": {
+                            "after": "Despues",
+                            "before": "Antes",
+                            "between": "Entre",
+                            "empty": "Vacío",
+                            "equals": "Igual a",
+                            "notBetween": "No entre",
+                            "notEmpty": "No Vacio",
+                            "not": "Diferente de"
+                        },
+                        "number": {
+                            "between": "Entre",
+                            "empty": "Vacio",
+                            "equals": "Igual a",
+                            "gt": "Mayor a",
+                            "gte": "Mayor o igual a",
+                            "lt": "Menor que",
+                            "lte": "Menor o igual que",
+                            "notBetween": "No entre",
+                            "notEmpty": "No vacío",
+                            "not": "Diferente de"
+                        },
+                        "string": {
+                            "contains": "Contiene",
+                            "empty": "Vacío",
+                            "endsWith": "Termina en",
+                            "equals": "Igual a",
+                            "notEmpty": "No Vacio",
+                            "startsWith": "Empieza con",
+                            "not": "Diferente de",
+                            "notContains": "No Contiene",
+                            "notStartsWith": "No empieza con",
+                            "notEndsWith": "No termina con"
+                        },
+                        "array": {
+                            "not": "Diferente de",
+                            "equals": "Igual",
+                            "empty": "Vacío",
+                            "contains": "Contiene",
+                            "notEmpty": "No Vacío",
+                            "without": "Sin"
+                        }
+                    },
+                    "data": "Data",
+                    "deleteTitle": "Eliminar regla de filtrado",
+                    "leftTitle": "Criterios anulados",
+                    "logicAnd": "Y",
+                    "logicOr": "O",
+                    "rightTitle": "Criterios de sangría",
+                    "title": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "value": "Valor"
+                },
+                "searchPanes": {
+                    "clearMessage": "Borrar todo",
+                    "collapse": {
+                        "0": "Paneles de búsqueda",
+                        "_": "Paneles de búsqueda (%d)"
+                    },
+                    "count": "{total}",
+                    "countFiltered": "{shown} ({total})",
+                    "emptyPanes": "Sin paneles de búsqueda",
+                    "loadMessage": "Cargando paneles de búsqueda",
+                    "title": "Filtros Activos - %d",
+                    "showMessage": "Mostrar Todo",
+                    "collapseMessage": "Colapsar Todo"
+                },
+                "select": {
+                    "cells": {
+                        "1": "1 celda seleccionada",
+                        "_": "%d celdas seleccionadas"
+                    },
+                    "columns": {
+                        "1": "1 columna seleccionada",
+                        "_": "%d columnas seleccionadas"
+                    },
+                    "rows": {
+                        "1": "1 fila seleccionada",
+                        "_": "%d filas seleccionadas"
+                    }
+                },
+                "thousands": ".",
+                "datetime": {
+                    "previous": "Anterior",
+                    "next": "Proximo",
+                    "hours": "Horas",
+                    "minutes": "Minutos",
+                    "seconds": "Segundos",
+                    "unknown": "-",
+                    "amPm": [
+                        "AM",
+                        "PM"
+                    ],
+                    "months": {
+                        "0": "Enero",
+                        "1": "Febrero",
+                        "10": "Noviembre",
+                        "11": "Diciembre",
+                        "2": "Marzo",
+                        "3": "Abril",
+                        "4": "Mayo",
+                        "5": "Junio",
+                        "6": "Julio",
+                        "7": "Agosto",
+                        "8": "Septiembre",
+                        "9": "Octubre"
+                    },
+                    "weekdays": [
+                        "Dom",
+                        "Lun",
+                        "Mar",
+                        "Mie",
+                        "Jue",
+                        "Vie",
+                        "Sab"
+                    ]
+                },
+                "editor": {
+                    "close": "Cerrar",
+                    "create": {
+                        "button": "Nuevo",
+                        "title": "Crear Nuevo Registro",
+                        "submit": "Crear"
+                    },
+                    "edit": {
+                        "button": "Editar",
+                        "title": "Editar Registro",
+                        "submit": "Actualizar"
+                    },
+                    "remove": {
+                        "button": "Eliminar",
+                        "title": "Eliminar Registro",
+                        "submit": "Eliminar",
+                        "confirm": {
+                            "_": "¿Está seguro que desea eliminar %d filas?",
+                            "1": "¿Está seguro que desea eliminar 1 fila?"
+                        }
+                    },
+                    "error": {
+                        "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+                    },
+                    "multi": {
+                        "title": "Múltiples Valores",
+                        "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+                        "restore": "Deshacer Cambios",
+                        "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+                    }
+                },
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "stateRestore": {
+                    "creationModal": {
+                        "button": "Crear",
+                        "name": "Nombre:",
+                        "order": "Clasificación",
+                        "paging": "Paginación",
+                        "search": "Busqueda",
+                        "select": "Seleccionar",
+                        "columns": {
+                            "search": "Búsqueda de Columna",
+                            "visible": "Visibilidad de Columna"
+                        },
+                        "title": "Crear Nuevo Estado",
+                        "toggleLabel": "Incluir:"
+                    },
+                    "emptyError": "El nombre no puede estar vacio",
+                    "removeConfirm": "¿Seguro que quiere eliminar este %s?",
+                    "removeError": "Error al eliminar el registro",
+                    "removeJoiner": "y",
+                    "removeSubmit": "Eliminar",
+                    "renameButton": "Cambiar Nombre",
+                    "renameLabel": "Nuevo nombre para %s",
+                    "duplicateError": "Ya existe un Estado con este nombre.",
+                    "emptyStates": "No hay Estados guardados",
+                    "removeTitle": "Remover Estado",
+                    "renameTitle": "Cambiar Nombre Estado"
+                }}
+                })
+                $('#year').on('change', function () {
+                var selectedYear = $(this).val();
+                tabla.column(11).search(selectedYear, true, false).draw();
+              });
+              });
+               
+                </script>
+                <script>
+                    
+                    $(document).ready(function() {
+                      var total = 0;
+                  
+                      $('#calmo tbody tr').each(function() {
+                        var valor = parseInt($(this).find('td:eq(8)').text());
+                        if (!isNaN(valor)) {
+                          total += valor;
+                        }
+                      });
+                  
+                      var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
+                      $('#total').text(totalFormatted);
+                    });
+                    
+            
+                
+              </script>
+            
+          
+            
+              </body>
+            </html>
+            
+            
+            </body>
+
+
+        <% } else if (rol === '6') { %>
+        
+            <body>
+                <header class="header">
+                    <nav>
+                        <ul class='nav-bar'>
+                            <li class='logo'><a href='#' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                            <input type='checkbox' id='check' />
+                            <button class="button">INICIO</button>
+                            <span class="menu">
+                  
+                                <span class="laa"><li><a href=""><strong>Inicio</strong></a></li></span>
+                                <li><a href="">Soporte</a></li>
+                                <li><a href="">Visión G12</a></li>
+                                  <li ><a href="#">ZONA <span class="lili">UDV H Usuario</span></a></li>
+                                  <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                            
+                                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                            </span>
+                            <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+                           
+                        </ul>
+                       
+                    </nav>
+                  </header>
+                  
+                
+                     <div class="container" class="mt-0">
+                        <a href="/UDVcreateH" class="btn pop btn-primary mt-4 mb-4"><i class="bi bi-person-lines-fill"></i> Crear </a>
+                     </div>
+                
+                
+                <div class="container " >
+                    <div class="row">
+                      <div class="col">
+                        <label for="year" class="label btn btn-primary">Seleccionar año:</label> <br>
+                        <select id="year" class="form-select li">
+                          <option value="">Todos</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <!-- Agrega más opciones para años adicionales si es necesario -->
+                        </select>
+                      </div>
+                    </div>
+                  </div>       
+                  
+                  <div class="container-fluid table-responsive table-striped ">
+                    <div class="row">
+                        <div class="col">     
+                           <table id="calmo" class="table table-bordered  text-center " style="width:100%">
+                           <thead >
+                            <tr class="text-white ">
+                                <th scope="col">ID</th>
+                                <th scope="col">Documento</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Líder°12</th> 
+                                <th scope="col">Líder°144</th>
+                                <th scope="col">Líder°Célula</th>
+                                <th scope="col" style="display: none;">Pago</th>
+                                <th scope="col">Fecha</th>
+                              </tr>
+                           </thead>
+                           <tbody class="text-black bg-white">
+                            <% results.forEach((infoMinisterio)=>{ %>
+                                <tr class="bg-light ">
+                                    <td><%= infoMinisterio.id %></td>
+                                    <td><%= infoMinisterio.documento %></td>
+                                    <td ><%= infoMinisterio.nombre %></td>
+                                    <td ><%= infoMinisterio.edad %></td>
+                                    <td ><%= infoMinisterio.telefono %></td>
+                                    <td ><%= infoMinisterio.lider12 %></td>
+                                    <td ><%= infoMinisterio.lider144 %></td>
+                                    <td ><%= infoMinisterio.liderCelula %></td>
+                                    <td style="display: none;"><%= infoMinisterio.pago %></td>
+                                    <td ><%= infoMinisterio.fecha %></td>
+                                </tr>
+                            <% }) %>
+                           </tbody>
+                           
+                        </div>
+                    </div>
+                </div>
+                 
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+                <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+        
+                
+                
+            
+                
+    
+    
+    
+                <script>
+                    
+             $(document).ready(function () {
+                var tabla = $('#calmo').DataTable({
+                  "createdRow": function(row, data, index){
+                    if(data [8] == 0 || data[8] == "- Seleccione -"){
+                        $('td', row).css({
+                            'background-color': '#FFA984',
+                        })
+                    }
+                  },
+            
+                  dom: "Bfrtilp",
+                  buttons: [{
+                    extend: 'excelHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-excel'></i>",
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-success'
+                  },
+                  { extend: 'pdfHtml5',
+                    text: "<i class='fa-sharp fa-solid fa-file-pdf'></i>",
+                    titleAttr: 'Exportar a PDF',
+                    className: 'btn btn-danger'
+                  },
+                  {
+                    extend: 'print',
+                    text: "<i class='fa-sharp fa-solid fa-print'></i>",
+                    titleAttr: 'Imprimir',
+                    className: 'btn btn-info'
+                  }
+                ],
+            
+                  language: {
+                "processing": "Procesando...",
+                "lengthMenu": "Mostrar _MENU_ registros",
+                "zeroRecords": "No se encontraron resultados",
+                "emptyTable": "Ningún dato disponible en esta tabla",
+                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "search": "Buscar:",
+                "infoThousands": ",",
+                "loadingRecords": "Cargando...",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                },
+                "aria": {
+                    "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad",
+                    "collection": "Colección",
+                    "colvisRestore": "Restaurar visibilidad",
+                    "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                    "copySuccess": {
+                        "1": "Copiada 1 fila al portapapeles",
+                        "_": "Copiadas %ds fila al portapapeles"
+                    },
+                    "copyTitle": "Copiar al portapapeles",
+                    "csv": "CSV",
+                    "excel": "Excel",
+                    "pageLength": {
+                        "-1": "Mostrar todas las filas",
+                        "_": "Mostrar %d filas"
+                    },
+                    "pdf": "PDF",
+                    "print": "Imprimir",
+                    "renameState": "Cambiar nombre",
+                    "updateState": "Actualizar",
+                    "createState": "Crear Estado",
+                    "removeAllStates": "Remover Estados",
+                    "removeState": "Remover",
+                    "savedStates": "Estados Guardados",
+                    "stateRestore": "Estado %d"
+                },
+                "autoFill": {
+                    "cancel": "Cancelar",
+                    "fill": "Rellene todas las celdas con <i>%d<\/i>",
+                    "fillHorizontal": "Rellenar celdas horizontalmente",
+                    "fillVertical": "Rellenar celdas verticalmentemente"
+                },
+                "decimal": ",",
+                "searchBuilder": {
+                    "add": "Añadir condición",
+                    "button": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "clearAll": "Borrar todo",
+                    "condition": "Condición",
+                    "conditions": {
+                        "date": {
+                            "after": "Despues",
+                            "before": "Antes",
+                            "between": "Entre",
+                            "empty": "Vacío",
+                            "equals": "Igual a",
+                            "notBetween": "No entre",
+                            "notEmpty": "No Vacio",
+                            "not": "Diferente de"
+                        },
+                        "number": {
+                            "between": "Entre",
+                            "empty": "Vacio",
+                            "equals": "Igual a",
+                            "gt": "Mayor a",
+                            "gte": "Mayor o igual a",
+                            "lt": "Menor que",
+                            "lte": "Menor o igual que",
+                            "notBetween": "No entre",
+                            "notEmpty": "No vacío",
+                            "not": "Diferente de"
+                        },
+                        "string": {
+                            "contains": "Contiene",
+                            "empty": "Vacío",
+                            "endsWith": "Termina en",
+                            "equals": "Igual a",
+                            "notEmpty": "No Vacio",
+                            "startsWith": "Empieza con",
+                            "not": "Diferente de",
+                            "notContains": "No Contiene",
+                            "notStartsWith": "No empieza con",
+                            "notEndsWith": "No termina con"
+                        },
+                        "array": {
+                            "not": "Diferente de",
+                            "equals": "Igual",
+                            "empty": "Vacío",
+                            "contains": "Contiene",
+                            "notEmpty": "No Vacío",
+                            "without": "Sin"
+                        }
+                    },
+                    "data": "Data",
+                    "deleteTitle": "Eliminar regla de filtrado",
+                    "leftTitle": "Criterios anulados",
+                    "logicAnd": "Y",
+                    "logicOr": "O",
+                    "rightTitle": "Criterios de sangría",
+                    "title": {
+                        "0": "Constructor de búsqueda",
+                        "_": "Constructor de búsqueda (%d)"
+                    },
+                    "value": "Valor"
+                },
+                "searchPanes": {
+                    "clearMessage": "Borrar todo",
+                    "collapse": {
+                        "0": "Paneles de búsqueda",
+                        "_": "Paneles de búsqueda (%d)"
+                    },
+                    "count": "{total}",
+                    "countFiltered": "{shown} ({total})",
+                    "emptyPanes": "Sin paneles de búsqueda",
+                    "loadMessage": "Cargando paneles de búsqueda",
+                    "title": "Filtros Activos - %d",
+                    "showMessage": "Mostrar Todo",
+                    "collapseMessage": "Colapsar Todo"
+                },
+                "select": {
+                    "cells": {
+                        "1": "1 celda seleccionada",
+                        "_": "%d celdas seleccionadas"
+                    },
+                    "columns": {
+                        "1": "1 columna seleccionada",
+                        "_": "%d columnas seleccionadas"
+                    },
+                    "rows": {
+                        "1": "1 fila seleccionada",
+                        "_": "%d filas seleccionadas"
+                    }
+                },
+                "thousands": ".",
+                "datetime": {
+                    "previous": "Anterior",
+                    "next": "Proximo",
+                    "hours": "Horas",
+                    "minutes": "Minutos",
+                    "seconds": "Segundos",
+                    "unknown": "-",
+                    "amPm": [
+                        "AM",
+                        "PM"
+                    ],
+                    "months": {
+                        "0": "Enero",
+                        "1": "Febrero",
+                        "10": "Noviembre",
+                        "11": "Diciembre",
+                        "2": "Marzo",
+                        "3": "Abril",
+                        "4": "Mayo",
+                        "5": "Junio",
+                        "6": "Julio",
+                        "7": "Agosto",
+                        "8": "Septiembre",
+                        "9": "Octubre"
+                    },
+                    "weekdays": [
+                        "Dom",
+                        "Lun",
+                        "Mar",
+                        "Mie",
+                        "Jue",
+                        "Vie",
+                        "Sab"
+                    ]
+                },
+                "editor": {
+                    "close": "Cerrar",
+                    "create": {
+                        "button": "Nuevo",
+                        "title": "Crear Nuevo Registro",
+                        "submit": "Crear"
+                    },
+                    "edit": {
+                        "button": "Editar",
+                        "title": "Editar Registro",
+                        "submit": "Actualizar"
+                    },
+                    "remove": {
+                        "button": "Eliminar",
+                        "title": "Eliminar Registro",
+                        "submit": "Eliminar",
+                        "confirm": {
+                            "_": "¿Está seguro que desea eliminar %d filas?",
+                            "1": "¿Está seguro que desea eliminar 1 fila?"
+                        }
+                    },
+                    "error": {
+                        "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+                    },
+                    "multi": {
+                        "title": "Múltiples Valores",
+                        "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+                        "restore": "Deshacer Cambios",
+                        "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+                    }
+                },
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "stateRestore": {
+                    "creationModal": {
+                        "button": "Crear",
+                        "name": "Nombre:",
+                        "order": "Clasificación",
+                        "paging": "Paginación",
+                        "search": "Busqueda",
+                        "select": "Seleccionar",
+                        "columns": {
+                            "search": "Búsqueda de Columna",
+                            "visible": "Visibilidad de Columna"
+                        },
+                        "title": "Crear Nuevo Estado",
+                        "toggleLabel": "Incluir:"
+                    },
+                    "emptyError": "El nombre no puede estar vacio",
+                    "removeConfirm": "¿Seguro que quiere eliminar este %s?",
+                    "removeError": "Error al eliminar el registro",
+                    "removeJoiner": "y",
+                    "removeSubmit": "Eliminar",
+                    "renameButton": "Cambiar Nombre",
+                    "renameLabel": "Nuevo nombre para %s",
+                    "duplicateError": "Ya existe un Estado con este nombre.",
+                    "emptyStates": "No hay Estados guardados",
+                    "removeTitle": "Remover Estado",
+                    "renameTitle": "Cambiar Nombre Estado"
+                }}
+                })
+                $('#year').on('change', function () {
+                var selectedYear = $(this).val();
+                tabla.column(11).search(selectedYear, true, false).draw();
+              });
+              });
+               
+                </script>
+                <script>
+                    
+                    $(document).ready(function() {
+                      var total = 0;
+                  
+                      $('#calmo tbody tr').each(function() {
+                        var valor = parseInt($(this).find('td:eq(8)').text());
+                        if (!isNaN(valor)) {
+                          total += valor;
+                        }
+                      });
+                  
+                      var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
+                      $('#total').text(totalFormatted);
+                    });
+                    
+            
+                
+              </script>
+            
+          
+            
+              </body>
+            </html>
+            
+            
+            </body>
+
+
+
+
+
+     <% } else { %>
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
         
      <% } %>

@@ -30,6 +30,7 @@ router.get('/error', (req, res) => {
 router.get('/UDVcreateH', (req, res) => {
   res.render('../views/UDV/UDVcreateH.ejs');
 });
+<<<<<<< HEAD
 router.get('/UDVcreateM', (req, res) => {
   res.render('../views/UDVM/UDVcreateM.ejs');
 });
@@ -44,6 +45,11 @@ router.get('/UDVcreateA', (req, res) => {
 });
 router.get('/Exitoso', (req, res) => {
   res.render('../views/exitoso.ejs');
+=======
+
+router.get('/register', (req, res) => {
+  res.render('register');
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 });
 
 // Registro de usuario
@@ -156,18 +162,25 @@ const requireRole = (roles) => {
 };
 
 // Rutas protegidas
+<<<<<<< HEAD
 // pagina principal //
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 router.get('/', requireRole(['1', '2', '3', '4', '5', '6']), (req, res) => {
   res.render('../views/homes/homeadmin.ejs', {
     login: true,
     nom: req.session.nom,
   });
 });
+<<<<<<< HEAD
 // registro //
 router.get('/register', requireRole(['1']), (req, res) => {
   res.render('register');
 });
 // homes //
+=======
+
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 router.get(
   '/homeUDV',
   requireRole(['1', '2', '3', '4', '5', '6']),
@@ -175,6 +188,7 @@ router.get(
     res.render('../views/homes/homeUDV.ejs');
   },
 );
+<<<<<<< HEAD
 router.get(
   '/homejovenes',
   requireRole(['1', '2', '3', '4', '5', '6']),
@@ -191,6 +205,8 @@ router.get(
   },
 );
 // hombres UDV //
+=======
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
 router.get(
   '/UDVindexH',
@@ -209,6 +225,7 @@ router.get(
     });
   },
 );
+<<<<<<< HEAD
 router.get(
   '/UDVinformeH',
   requireRole(['1', '2', '3', '4', '5', '6']),
@@ -244,6 +261,9 @@ router.get(
     });
   },
 );
+=======
+
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 router.get('/UDVedit/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
@@ -259,6 +279,7 @@ router.get('/UDVedit/:id', requireRole(['1', '2', '3']), (req, res) => {
     },
   );
 });
+<<<<<<< HEAD
 router.get('/UDVeditAsistenciaH/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
@@ -607,11 +628,16 @@ router.get(
     });
   },
 );
+=======
+
+// Resto de las rutas protegidas...
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
 // Tablas
 const crud = require('../middlewares/crud_UDV_info.js');
 router.post('/save', crud.save);
 router.post('/update', crud.update);
+<<<<<<< HEAD
 router.post('/updateA', crud.updateA);
 router.post('/saveM', crud.saveM);
 router.post('/updateM', crud.updateM);
@@ -625,4 +651,7 @@ router.post('/updateJ2', crud.updateJ2);
 router.post('/saveA', crud.saveA);
 router.post('/updateA1', crud.updateA1);
 router.post('/updateA2', crud.updateA2);
+=======
+
+>>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 module.exports = router;
