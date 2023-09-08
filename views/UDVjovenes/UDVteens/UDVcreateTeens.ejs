@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>UDV Crear T</title>
+<!-- Bootstrap CSS -->
+<link rel="icon" href="https://mci12.com/wp-content/uploads/2019/08/mci-logo.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+
+:root {
+    --color-dark: #178f45;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+    --black: #000000;
+    --borde: #000000;
+}
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+    background-color: black !important;
+    border-color: black !important;
+}
+.fijar{
+    margin-top: -135px;
+}
+.btn-primary:hover {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 3rem;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx) !important;
+}
+
+
+.form-control {
+    background-color: var(--color-grey);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: .2rem;
+    padding: 1.2rem 1rem;
+}
+
+.register-bg {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.text-danger {
+    color: #000000!important;
+}
+.testiomonial {
+    bottom: 10px
+}
+
+.PEPI{
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.logo a, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.logo{
+    position: absolute;
+    font-size: 30px;
+}
+.pipi{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+.pipo{
+    color: rgb(255, 255, 255);
+}
+.text-muted {
+    color: #dfdfdf!important;
+}
+.vamos {
+    font-size: 40px;
+    margin-top: 50px;
+}
+.form-select {
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    display: block;
+    width: 100%;
+    /* padding: 0.375rem 2.25rem 0.375rem 0.75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    padding: 1.2rem 1rem;
+    color: #495057;
+    background-color: var(--color-grey);
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+</style>
+</head>
+  <body>
+      <section class="contact-box">
+        <div class="row no-gutters bg-dark">
+            
+
+            <div class="col-xl-12 col-lg-12 d-flex">
+                
+                 <div class="container align-self-center p-4">
+               
+                     <h1 class="vamos font-weight-bold mb-3 text-center">UDV TEENS </h1>
+                     
+                     <p class="text-muted mb-5 text-center">Ingresa la siguiente información para registrarte.</p>
+ 
+                     <form action="/saveT" method="POST"  id="myForm"  onsubmit="return validarFormulario()">
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold" for="nombre">Nombre Completo <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nombre"    name="nombre" placeholder="Nombre Completo">
+                        </div>
+
+                         <div class="form-row mb-2">
+                             <div class="form-group col-md-6">
+                                 <label class="font-weight-bold"  for="edadd">Fecha de Nacimiento <span class="text-danger">*</span></label>
+                                 <input type="date" class="form-control" id="edadd" name="edadd" placeholder="Fecha de Nacimiento">
+                             </div>
+                             <div class="form-group col-md-6">
+                                <label class="font-weight-bold" for="edad">Edad <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="edad" name="edad" placeholder="Edad" readonly>
+                            </div>
+                            
+                             <div class="form-group col-md-6">
+                                 <label class="font-weight-bold"  for="documento">Documento <span class="text-danger">*</span></label>
+                                 <input type="number" class="form-control" id="documento" name="documento" placeholder="Número de Documento">
+                             </div>
+                             <div class="form-group col-md-6">
+                                <label class="font-weight-bold"  for="telefono">Teléfono <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control"  id="telefono" name="telefono" placeholder="Número de Teléfono">
+                            </div>
+                         </div>
+                         <div class="form-group mb-3">
+                            <label class="font-weight-bold"  for="fecha">Fecha de Hoy <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Hoy">
+                        </div>
+                         <div class="form-group mb-3">
+                            <label class="font-weight-bold"  for="lider12">Líder 12 <span class="text-danger">*</span></label>
+                         <select class="form-select " id="lider12" name="lider12" required aria-label="Default select example">
+                            <option value="">Todos</option>
+                            <option value="JOSE Y LOREINY">JOSE Y LOREINY</option>
+                            <option value="CARLOS Y ANDREA">CARLOS Y ANDREA</option>
+                            <option value="DIEGO Y ANA">DIEGO Y ANA</option>
+                            <option value="CARLOS Y DIANA">CARLOS Y DIANA</option>
+                            <option value="CAROLINA YEPES">CAROLINA YEPES</option>
+                            <option value="OSCAR Y ANGELA">OSCAR Y ANGELA</option>
+                            <option value="EQUIPO 2">EQUIPO 2</option>
+                            <option value="SERGIO CALDERON">SERGIO CALDERON</option>
+                            <option value="JULIO Y CHRISTIE">JULIO Y CHRISTIE</option>
+                            <option value="WILMER PINZON">WILMER PINZON</option>
+                            <option value="VERONICA HURTADO">VERONICA HURTADO</option>
+                            <option value="LEIDY PORRAS">LEIDY PORRAS</option>
+                            <option value="GABRIEL CASTELLANOS">GABRIEL CASTELLANOS</option>
+                          </select>                                                                 
+
+                        </div>
+                      
+                         
+                         <div class="form-group mb-3">
+                             <label class="font-weight-bold"  for="lider144">Líder 144 <span class="text-danger">*</span></label>
+                             <input type="text" class="form-control" id="lider144" name="lider144" placeholder="Nombre del Líder de 144">
+                         </div>
+                         <div class="form-group mb-3">
+                            <label class="font-weight-bold"  for="liderCelula">Líder Inmediato <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="liderCelula" name="liderCelula" placeholder="Nombre del Líder de Célula">
+                        </div>
+                         <div class="form-group mb-2">
+                             <div class="form-check">
+                                 <input class="form-check-input" id="terminosYcondiciones" type="checkbox">
+                                 <label class="form-check-label text-muted" for="terminosYcondiciones">Al seleccionar esta casilla aceptas nuestro aviso de privacidad y los términos y condiciones</label>
+                             </div>
+                         </div>
+                         <br>
+                         <button type="submit" class=" btn btn-primary width-100">Enviar registro</button>
+                     </form>
+                    
+                     <small class="d-inline-block text-muted mt-5">Todos los derechos reservados | © 2023 MCI BUCARAMANGA SOFWARE</small>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+         
+
+    <script>
+    function validarFormulario() {
+    // Obtener los valores de los campos del formulario
+    var nombre = document.getElementById('nombre').value;
+    var edad = parseInt(document.getElementById('edad').value);
+    var documento = document.getElementById('documento').value;
+    var telefono = document.getElementById('telefono').value;
+    var fecha = document.getElementById('fecha').value;
+    var lider12 = document.getElementById('lider12').value;
+    var lider144 = document.getElementById('lider144').value;
+    var liderCelula = document.getElementById('liderCelula').value;
+    var terminosYcondiciones = document.getElementById('terminosYcondiciones').checked;
+
+    // Realizar la validación
+    if (
+        nombre === '' ||
+        documento === '' ||
+        telefono === '' ||
+        fecha === '' ||
+        lider12 === '' ||
+        lider144 === '' ||
+        liderCelula === '' ||
+        !terminosYcondiciones
+    ) {
+        // Mostrar una alerta de error para campos vacíos con SweetAlert
+        Swal.fire({
+            icon: 'warning',
+            title: 'Error',
+            text: 'Por favor, complete todos los campos del formulario.',
+        });
+        return false; // Evitar que se envíe el formulario
+    }
+
+    if (isNaN(edad) || edad < 1 || edad > 13) {
+        // Mostrar una alerta de error para la edad con SweetAlert
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'La edad debe estar entre 1 y 13 años para inscribirse como "teens".',
+        });
+        return false; // Evitar que se envíe el formulario
+    }
+
+    // Si todos los campos están llenos y la edad está en el rango permitido, el formulario se enviará
+    return true;
+}
+
+
+
+        // Obtener la fecha actual
+        var fechaActual = new Date().toISOString().split('T')[0];
+
+    // Establecer el valor del campo "Fecha de Hoy"
+    document.getElementById('fecha').value = fechaActual;
+
+     // Obtener el elemento del campo de entrada
+    var input = document.getElementById('fecha');
+
+    // Establecer el atributo readonly
+    input.setAttribute('readonly', 'readonly');
+
+      </script>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const fechaNacimientoInput = document.getElementById('edadd');
+            const edadNumericaInput = document.getElementById('edad');
+    
+            fechaNacimientoInput.addEventListener('change', function () {
+                const fechaNacimiento = new Date(this.value);
+                const hoy = new Date();
+                const edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+                
+                // Verificar si aún no ha llegado el cumpleaños de este año
+                if (new Date(hoy.getFullYear(), fechaNacimiento.getMonth(), fechaNacimiento.getDate()) > hoy) {
+                    edad -= 1;
+                }
+                
+                // Mostrar la edad en el campo numérico
+                edadNumericaInput.value = edad;
+            });
+        });
+    </script>
+    
+</html>

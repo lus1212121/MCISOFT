@@ -1,0 +1,78 @@
+<script>
+    // Obtener los elementos de input por su ID
+    const a1Input = document.getElementById('a1');
+    const t1Input = document.getElementById('t1');
+    const a2Input = document.getElementById('a2');
+    const t2Input = document.getElementById('t2');
+    const a3Input = document.getElementById('a3');
+    const t3Input = document.getElementById('t3');
+    const encuentroInput = document.getElementById('encuentro');
+    const a4Input = document.getElementById('a4');
+    const t4Input = document.getElementById('t4');
+    const a5Input = document.getElementById('a5');
+    const t5Input = document.getElementById('t5');
+    const a6Input = document.getElementById('a6');
+    const t6Input = document.getElementById('t6');
+    const bautismoInput = document.getElementById('bautismo');
+    // ... otros inputs ...
+
+    // Función para validar y ajustar el valor del input
+    const validateAndAdjustInput = (input) => {
+        const inputValue = input.value;
+        if (inputValue !== '0' && inputValue !== '1') {
+            input.value = ''; // Limpiar el valor si no es 0 o 1
+        }
+    };
+
+    // Agregar event listener a los inputs para validar y ajustar el valor
+    a1Input.addEventListener('input', () => {
+        validateAndAdjustInput(a1Input);
+    });
+
+    t1Input.addEventListener('input', () => {
+        validateAndAdjustInput(t1Input);
+    });
+    a2Input.addEventListener('input', () => {
+        validateAndAdjustInput(a2Input);
+    });
+
+    t2Input.addEventListener('input', () => {
+        validateAndAdjustInput(t2Input);
+    });
+    a3Input.addEventListener('input', () => {
+        validateAndAdjustInput(a3Input);
+    });
+
+    t3Input.addEventListener('input', () => {
+        validateAndAdjustInput(t3Input);
+    });
+    encuentroInput.addEventListener('input', () => {
+        validateAndAdjustInput(encuentroInput);
+    });
+
+    a4Input.addEventListener('input', () => {
+        validateAndAdjustInput(a4Input);
+    });
+    t4Input.addEventListener('input', () => {
+        validateAndAdjustInput(t4Input);
+    });
+
+    a5Input.addEventListener('input', () => {
+        validateAndAdjustInput(a5Input);
+    });
+    t5Input.addEventListener('input', () => {
+        validateAndAdjustInput(t5Input);
+    });
+
+    a6Input.addEventListener('input', () => {
+        validateAndAdjustInput(a6Input);
+    });
+    t6Input.addEventListener('input', () => {
+        validateAndAdjustInput(t6Input);
+    });
+
+    bautismoInput.addEventListener('input', () => {
+        validateAndAdjustInput(bautismoInput);
+    });
+
+</script>

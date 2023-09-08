@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeUDV</title>
+  <link rel="icon" href="https://mci12.com/wp-content/uploads/2019/08/mci-logo.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <%- include('../partials/homeStyle.ejs') %>
+</head>
+<body>
+
+ 
+    <header class="header">
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='/' ><img src="https://mci12.com/wp-content/uploads/2019/08/mci-logo-w.png" alt=""><span class="PEPI"> MCI Software </span><i class="bi pipi bi-gear"></i></a></li>
+                <input type='checkbox' id='check' />
+                <a href="/"><button class="button" id="lu">INICIO</button></a>
+                <span class="menu">
+      
+                    <span class="laa"><li><a href="/"><strong>Inicio</strong></a></li></span>
+                    <li><a href="/soporte">Soporte</a></li>
+                    <li><a href="">Visión G12</a></li>
+                      <li ><a href="#">ZONA <span class="lili">UDV</span></a></li>
+                      <a href="logout" class="topo"><li><i class="bi salir bi-box-arrow-left"></i></li></a>
+                
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu "><i class="bi lol bi-list"></i></label>
+               
+            </ul>
+           
+        </nav>
+      </header>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-perfil-lateral-dibujado-mano_23-2150503804.jpg?w=740&t=st=1694021898~exp=1694022498~hmac=2c996ce19631529f86b94899071aecc6e29248ac5f0abe820e12fe6ebabd62ac" class="" alt="Imagen 1">
+        <h1>Hombres</h1>
+        <div class="card-body">
+          <a href="/UDVindexH" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-perfil-lateral-dibujado-mano_23-2150503847.jpg?w=740&t=st=1694021960~exp=1694022560~hmac=7c7532d7c01c6aebc252bfc395ba4fdf0729262fedb598d60850f6047602aa0d" class="card-img-top" alt="Imagen 2">
+        <h1>Mujeres</h1>
+        <div class="card-body">
+          <a href="/UDVindexM" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-perfil-lateral-dibujado-mano_23-2150503821.jpg?w=740&t=st=1694022036~exp=1694022636~hmac=8e9f5f98da5abf932960022d80d2ad2b32ad755f26a302cbbdca305e11989834" class="card-img-top" alt="Imagen 3">
+        <h1>Jóvenes</h1>
+        <div class="card-body">
+          <a href="/homejovenes" class="btn btn-primary card-link">Ingresar</a>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="abajo"></div>
+
+</body>
+</html>

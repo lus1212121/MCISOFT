@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>UDV Editar Asistencia H</title>
+<!-- Bootstrap CSS -->
+<link rel="icon" href="https://mci12.com/wp-content/uploads/2019/08/mci-logo.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<%- include('../partials/styleTable.ejs') -%>
+
+</head>
+  <body>
+    <% if (infoMinisterio) { %>
+
+        <%- include('../partials/headerUDVH.ejs') %>
+        <div class="containerr">
+            <div class="Ins">
+                <p>Por favor, complete la tabla a continuación con la información correspondiente. Para indicar si la persona asistió, ingrese el valor "1" en la columna correspondiente. Si la persona no asistió, ingrese el valor "0", Igual mente en las tareas si la realizo "1" sino "0". Una vez completados los campos, presione el botón "Enviar registro" para guardar la información.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 MCI B/manga. All rights reserved.</p>
+        </div>
+        <div class="container-fluid table-responsive table-striped ">
+            <div class="row ">
+                <div class="col p-0">     
+                   <table id="calmo" class="table table-bordered  text-center " style="width:100%">
+                   <thead >
+                    <tr class="text-white " >
+                        <th scope="col">ID</th>
+                        <th scope="col">A1</th>
+                        <th scope="col">T1</th>
+                        <th scope="col">A2</th>
+                        <th scope="col">T2</th>
+                        <th scope="col">A3</th> 
+                        <th scope="col">T3</th>
+                        <th scope="col">Encuentros</th>
+                        <th scope="col">A4</th>
+                        <th scope="col">T4</th>
+                        <th scope="col">A5</th>
+                        <th scope="col">T5</th>
+                        <th scope="col">A6</th> 
+                        <th scope="col">T6</th>
+                        <th scope="col">Bautismo</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                   </thead>
+                   <tbody class="text-black bg-white">
+                        <tr class="bg-light ">
+                            <form action="/updateA" method="POST"  id="myForm">
+                             <td><input id="id" name="id" value="<%= infoMinisterio.id %>" hidden></td>
+                             <td><input id="a1" name="a1" value="<%= infoMinisterio.a1 %>" ></td>
+                             <td><input id="t1" name="t1" value="<%= infoMinisterio.t1 %>" ></td>
+                             <td><input id="a2" name="a2" value="<%= infoMinisterio.a2 %>" ></td>
+                             <td><input id="t2" name="t2" value="<%= infoMinisterio.t2 %>" ></td>
+                             <td><input id="a3" name="a3" value="<%= infoMinisterio.a3 %>" ></td>
+                             <td><input id="t3" name="t3" value="<%= infoMinisterio.t3 %>" ></td>
+                             <td><input id="encuentro" name="encuentro" value="<%= infoMinisterio.encuentro %>" ></td>
+                             <td><input id="a4" name="a4" value="<%= infoMinisterio.a4 %>" ></td>
+                             <td><input id="t4" name="t4" value="<%= infoMinisterio.t4 %>" ></td>
+                             <td><input id="a5" name="a5" value="<%= infoMinisterio.a5 %>" ></td>
+                             <td><input id="t5" name="t5" value="<%= infoMinisterio.t5 %>" ></td>
+                             <td><input id="a6" name="a6" value="<%= infoMinisterio.a6 %>" ></td>
+                             <td><input id="t6" name="t6" value="<%= infoMinisterio.t6 %>" ></td>
+                             <td><input id="bautismo" name="bautismo" value="<%= infoMinisterio.bautismo %>" ></td>
+                             <td><button type="submit" class=" btn btn-primary width-100">Enviar registro</button></td>
+                            </form>
+                        </tr>
+                        </tbody>
+                   
+                </div>
+            </div>
+        </div>
+
+       
+   
+                        
+    <%- include('../partials/scriptAsistenciaUDV.ejs') %>
+
+    <script>
+        function selectOption(option) {
+          document.getElementById("forma").value = option;
+        }
+      </script>
+
+    <script>
+    $(document).ready(function() {
+      var total = 0;
+  
+      $('#calma tbody tr').each(function() {
+        var valor = parseInt($(this).find('td:eq(8)').text());
+        if (!isNaN(valor)) {
+          total += valor;
+        }
+      });
+  
+      var totalFormatted = total.toLocaleString('es-CO'); // Agregar separador de miles
+      $('#total').text(totalFormatted);
+    });
+  </script>
+    <% } %>
+</html>
