@@ -1,5 +1,4 @@
 const mysql = require('mysql2');
-// require('dotenv').config();
 const constants = require('../src/shared/constants');
 
 const ClientDB = function () {
@@ -8,10 +7,6 @@ const ClientDB = function () {
     user: constants.USER1,
     password: constants.PASS1,
     database: constants.DATA1,
-<<<<<<< HEAD
-    connectTimeout: 60000,
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
   });
 
   conexion.connect((error) => {

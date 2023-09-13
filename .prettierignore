@@ -1,10 +1,5 @@
-<<<<<<< HEAD
+
 migrations
 node_modules
 build
-=======
-migrations
-node_modules
-build
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 /.history/

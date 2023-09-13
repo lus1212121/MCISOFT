@@ -1,11 +1,7 @@
 const conexion = require('../config/db');
 
-<<<<<<< HEAD
-
 // hombres sistema //
 
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 exports.save = (req, res) => {
   const nombre = req.body.nombre;
   const edad = req.body.edad;
@@ -18,7 +14,6 @@ exports.save = (req, res) => {
   const pago = req.body.pago;
   const forma = req.body.forma;
   const recibo = req.body.recibo;
-<<<<<<< HEAD
   const ciclo = req.body.ciclo;
   const a1 = req.body.a1;
   const t1 = req.body.t1;
@@ -34,11 +29,9 @@ exports.save = (req, res) => {
   const a6 = req.body.a6;
   const t6 = req.body.t6;
   const bautismo = req.body.bautismo;
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
   conexion().query(
-    'INSERT INTO infoMinisterio SET ?',
+    'INSERT INTO infoministerio SET ?',
     {
       nombre: nombre,
       edad: edad,
@@ -51,39 +44,31 @@ exports.save = (req, res) => {
       pago: pago,
       recibo: recibo,
       forma: forma,
-<<<<<<< HEAD
-      ciclo:ciclo,
-      a1:a1,
-      t1:t1,
-      a2:a2,
-      t2:t2,
-      a3:a3,
-      t3:t3,
-      encuentro:encuentro,
-      a4:a4,
-      t4:t4,
-      a5:a5,
-      t5:t5,
-      a6:a6,
-      t6:t6,
-      bautismo:bautismo,
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+      ciclo: ciclo,
+      a1: a1,
+      t1: t1,
+      a2: a2,
+      t2: t2,
+      a3: a3,
+      t3: t3,
+      encuentro: encuentro,
+      a4: a4,
+      t4: t4,
+      a5: a5,
+      t5: t5,
+      a6: a6,
+      t6: t6,
+      bautismo: bautismo,
     },
     (error, results) => {
       if (error) {
         console.log(error);
       } else {
-<<<<<<< HEAD
         res.redirect('/Exitoso');
-=======
-        res.redirect('/UDVindexH');
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
       }
     },
   );
 };
-
 exports.update = (req, res) => {
   const id = req.body.id;
   const nombre = req.body.nombre;
@@ -97,29 +82,12 @@ exports.update = (req, res) => {
   const pago = req.body.pago;
   const forma = req.body.forma;
   const recibo = req.body.recibo;
-<<<<<<< HEAD
   const ciclo = req.body.ciclo;
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
   conexion().query(
-    'UPDATE infoMinisterio SET ? WHERE id = ?',
+    'UPDATE infoministerio SET ? WHERE id = ?',
     [
       {
-<<<<<<< HEAD
-      nombre: nombre,
-      edad: edad,
-      documento: documento,
-      telefono: telefono,
-      fecha: fecha,
-      lider12: lider12,
-      lider144: lider144,
-      liderCelula: liderCelula,
-        pago: pago,
-        recibo: recibo,
-        forma: forma,
-        ciclo:ciclo,
-=======
         nombre: nombre,
         edad: edad,
         documento: documento,
@@ -131,7 +99,7 @@ exports.update = (req, res) => {
         pago: pago,
         recibo: recibo,
         forma: forma,
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+        ciclo: ciclo,
       },
       id,
     ],
@@ -144,8 +112,6 @@ exports.update = (req, res) => {
     },
   );
 };
-<<<<<<< HEAD
-
 
 exports.updateA = (req, res) => {
   const id = req.body.id;
@@ -165,7 +131,7 @@ exports.updateA = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'UPDATE infoMinisterio SET ? WHERE id = ?',
+    'UPDATE infoministerio SET ? WHERE id = ?',
     [
       {
         a1:a1,
@@ -226,7 +192,7 @@ exports.saveM = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'INSERT INTO infoMinisterioM SET ?',
+    'INSERT INTO infoministeriom SET ?',
     {
       nombre: nombre,
       edad: edad,
@@ -259,7 +225,7 @@ exports.saveM = (req, res) => {
       if (error) {
         console.log(error);
       } else {
-        res.redirect('/UDVindexM');
+        res.redirect('/Exitoso');
       }
     },
   );
@@ -281,7 +247,7 @@ exports.updateM = (req, res) => {
   const ciclo = req.body.ciclo;
 
   conexion().query(
-    'UPDATE infoMinisterioM SET ? WHERE id = ?',
+    'UPDATE infoministeriom SET ? WHERE id = ?',
     [
       {
       nombre: nombre,
@@ -327,7 +293,7 @@ exports.updateM2 = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'UPDATE infoMinisterioM SET ? WHERE id = ?',
+    'UPDATE infoministeriom SET ? WHERE id = ?',
     [
       {
         a1:a1,
@@ -388,7 +354,7 @@ exports.saveT = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'INSERT INTO infoMinisterioT SET ?',
+    'INSERT INTO infoministeriot SET ?',
     {
       nombre: nombre,
       edad: edad,
@@ -442,7 +408,7 @@ exports.updateT = (req, res) => {
   const ciclo = req.body.ciclo;
 
   conexion().query(
-    'UPDATE infoMinisterioT SET ? WHERE id = ?',
+    'UPDATE infoministeriot SET ? WHERE id = ?',
     [
       {
       nombre: nombre,
@@ -488,7 +454,7 @@ exports.updateT2 = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'UPDATE infoMinisterioT SET ? WHERE id = ?',
+    'UPDATE infoministeriot SET ? WHERE id = ?',
     [
       {
         a1:a1,
@@ -548,7 +514,7 @@ exports.saveJ = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'INSERT INTO infoMinisterioJ SET ?',
+    'INSERT INTO infoministerioj SET ?',
     {
       nombre: nombre,
       edad: edad,
@@ -602,7 +568,7 @@ exports.updateJ = (req, res) => {
   const ciclo = req.body.ciclo;
 
   conexion().query(
-    'UPDATE infoMinisterioJ SET ? WHERE id = ?',
+    'UPDATE infoministerioj SET ? WHERE id = ?',
     [
       {
       nombre: nombre,
@@ -648,7 +614,7 @@ exports.updateJ2 = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'UPDATE infoMinisterioJ SET ? WHERE id = ?',
+    'UPDATE infoministerioj SET ? WHERE id = ?',
     [
       {
         a1:a1,
@@ -710,7 +676,7 @@ exports.saveA = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'INSERT INTO infoMinisterioA SET ?',
+    'INSERT INTO infoministerioa SET ?',
     {
       nombre: nombre,
       edad: edad,
@@ -764,7 +730,7 @@ exports.updateA1 = (req, res) => {
   const ciclo = req.body.ciclo;
 
   conexion().query(
-    'UPDATE infoMinisterioA SET ? WHERE id = ?',
+    'UPDATE infoministerioa SET ? WHERE id = ?',
     [
       {
       nombre: nombre,
@@ -810,7 +776,7 @@ exports.updateA2 = (req, res) => {
   const bautismo = req.body.bautismo;
 
   conexion().query(
-    'UPDATE infoMinisterioA SET ? WHERE id = ?',
+    'UPDATE infoministerioa SET ? WHERE id = ?',
     [
       {
         a1:a1,
@@ -839,5 +805,3 @@ exports.updateA2 = (req, res) => {
     },
   );
 };
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2

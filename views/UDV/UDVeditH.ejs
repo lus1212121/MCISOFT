@@ -4,14 +4,9 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
 <title>UDV Editar H</title>
 <!-- Bootstrap CSS -->
 <link rel="icon" href="https://mci12.com/wp-content/uploads/2019/08/mci-logo.png" type="image/png">
-=======
-
-<!-- Bootstrap CSS -->
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -219,25 +214,18 @@ body {
                      
                      <p class="text-muted mb-5">Ingresa la siguiente información para registrarte.</p>
  
-<<<<<<< HEAD
                      <form action="/update" method="POST"  id="myFormL"  onsubmit="return validarFormulario()">
                         <input id="id" name="id" value="<%= infoMinisterio.id %>" hidden>
                         <div class="form-group mb-3">
                             <label class="font-weight-bold" for="nombre">Nombre Completo <span class="text-danger">*</span></label>
                             <input type="text" class="form-control"  id="nombre"  value="<%= infoMinisterio.nombre %>"  name="nombre" placeholder="Nombre Completo">
-=======
-                     <form action="/update" method="POST"  id="myForm"  onsubmit="return validarFormulario()">
-                        <input id="id" name="id" value="<%= infoMinisterio.id %>" hidden>
-                        <div class="form-group mb-3">
-                            <label class="font-weight-bold" for="nombre">Nombre Completo <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="nombre"  value="<%= infoMinisterio.nombre %>"  name="nombre" placeholder="Nombre Completo">
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+
                         </div>
 
                          <div class="form-row mb-2">
                              <div class="form-group col-md-6">
                                  <label class="font-weight-bold"  for="edad">Fecha de Nacimiento <span class="text-danger">*</span></label>
-<<<<<<< HEAD
+
                                  <input type="number" class="form-control" id="edad" name="edad"  value="<%= infoMinisterio.edad %>" placeholder="Fecha de Nacimiento">
                              </div>
                              <div class="form-group col-md-6">
@@ -247,17 +235,7 @@ body {
                              <div class="form-group col-md-6">
                                 <label class="font-weight-bold"  for="telefono">Teléfono <span class="text-danger">*</span></label>
                                 <input type="number" class="form-control" id="telefono" name="telefono" value="<%= infoMinisterio.telefono %>" placeholder="Número de Teléfono">
-=======
-                                 <input type="date" class="form-control" id="edad" name="edad" value="<%= infoMinisterio.edad %>" placeholder="Fecha de Nacimiento">
-                             </div>
-                             <div class="form-group col-md-6">
-                                 <label class="font-weight-bold"  for="documento">Documento <span class="text-danger">*</span></label>
-                                 <input type="number" class="form-control" id="documento" value="<%= infoMinisterio.documento %>" name="documento" placeholder="Numero de Documento">
-                             </div>
-                             <div class="form-group col-md-6">
-                                <label class="font-weight-bold"  for="telefono">Teléfono <span class="text-danger">*</span></label>
-                                <input type="number" class="form-control" id="telefono" name="telefono" value="<%= infoMinisterio.telefono %>" placeholder="Numero de Teléfono">
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="font-weight-bold"  for="fecha">Fecha de Hoy <span class="text-danger">*</span></label>
@@ -266,11 +244,9 @@ body {
                          </div>
                          <div class="form-group mb-3">
                             <label class="font-weight-bold"  for="lider12">Líder 12 <span class="text-danger">*</span></label>
-<<<<<<< HEAD
+
                             <input class="form-select input " name="lider12" value="<%= infoMinisterio.lider12 %>" id="lider12" name="lider12" required aria-label="Default select example">
-=======
-                            <input class="form-select input "  name="lider12" value="<%= infoMinisterio.lider12 %>" id="lider12" name="lider12" value="<%= infoMinisterio.lider12 %>" required aria-label="Default select example">
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+
                          </input>                                                                 
                         </div>
                     
@@ -281,19 +257,12 @@ body {
                          </div>
                          <div class="form-group mb-3">
                             <label class="font-weight-bold"  for="liderCelula">Líder Inmediato <span class="text-danger">*</span></label>
-<<<<<<< HEAD
+
                             <input type="text" class="form-control"id="liderCelula" name="liderCelula"  value="<%= infoMinisterio.liderCelula %>" placeholder="Nombre del Líder de Célula">
                         </div>
 
                         <div class="form-group mb-3">
                             <label class="font-weight-bold"  for="pago">Poner el Monto a Pagar <span class="text-danger">*</span></label>
-=======
-                            <input type="text" class="form-control" id="liderCelula" name="liderCelula"  value="<%= infoMinisterio.liderCelula %>" placeholder="Nombre del Líder de Célula">
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label class="font-weight-bold"  for="pago">Poner el monto a pagar <span class="text-danger">*</span></label>
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                             <select class="form-select " id="pago" name="pago" value="<%= infoMinisterio.pago %>" aria-label="Default select example">
                             <option selected>- Seleccione -</option>
                             <option value="30000">20000</option>
@@ -303,7 +272,7 @@ body {
 
                         </div>
                         <div class="form-group mb-3">
-<<<<<<< HEAD
+
                             <label class="font-weight-bold"  for="ciclo">Ciclo <span class="text-danger">*</span></label>
                             <select class="form-select " id="ciclo" name="ciclo" value="<%= infoMinisterio.ciclo %>" aria-label="Default select example">
                             <option selected>- Seleccione -</option>
@@ -314,8 +283,7 @@ body {
 
                         </div>
                         <div class="form-group mb-3">
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+
                             <label class="font-weight-bold"  for="recibo">Numero de recibo <span class="text-danger">*</span></label>
                             <input type="number" class="form-control" id="recibo" name="recibo" value="<%= infoMinisterio.recibo %>"  placeholder="Numero del recibo">
                         </div>
@@ -326,11 +294,6 @@ body {
                             <option value="Bancolombia">Bancolombia</option>
                             <option value="Banco Occidente">Banco Occidente</option>
                             <option value="Efectivo">Efectivo</option>
-<<<<<<< HEAD
-                            <option value="Datafono">Datáfono</option>
-=======
-                            <option value="Datafono">Datafono</option>
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
                           </select>                                                                 
 
                         </div>
@@ -371,62 +334,6 @@ body {
       $('#total').text(totalFormatted);
     });
   </script>
-<<<<<<< HEAD
-    
 
-=======
-    <script>
-        function validarFormulario() {
-          // Obtener los valores de los campos del formulario
-          var nombre = document.getElementById('nombre').value;
-          var edad = document.getElementById('edad').value;
-          var documento = document.getElementById('documento').value;
-          var telefono = document.getElementById('telefono').value;
-          var fecha = document.getElementById('fecha').value;
-          var lider12 = document.getElementById('lider12').value;
-          var lider144 = document.getElementById('lider144').value;
-          var pago = document.getElementById('pago').value;
-          var forma = document.getElementById('forma').value;
-          var recibo = document.getElementById('recibo').value;
-          var terminosYcondiciones = document.getElementById('terminosYcondiciones').checked;
-      
-          // Realizar la validación
-          if (
-            nombre === '' ||
-            edad === '' ||
-            documento === '' ||
-            telefono === '' ||
-            fecha === '' ||
-            lider12 === '- Seleccione -' ||
-            lider144 === '' ||
-            pago === '' ||
-            forma === '' ||
-            recibo === '' ||
-            !terminosYcondiciones
-          ) {
-            // Mostrar un mensaje de error o realizar alguna acción adicional
-            alert('Por favor, complete todos los campos del formulario.');
-            return false; // Evitar que se envíe el formulario
-          }
-      
-          // Si todos los campos están llenos, el formulario se enviará
-          return true;
-        }
-
-        
-        // Obtener la fecha actual
-      var fechaActual = new Date().toISOString().split('T')[0];
-
-    // Establecer el valor del campo "Fecha de Hoy"
-    document.getElementById('fecha').value = fechaActual;
-
-    // Obtener el elemento del campo de entrada
-    var input = document.getElementById('fecha');
-
-    // Establecer el atributo readonly
-    input.setAttribute('readonly', 'readonly');
-
-      </script>
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
     <% } %>
 </html>

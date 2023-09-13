@@ -30,7 +30,6 @@ router.get('/error', (req, res) => {
 router.get('/UDVcreateH', (req, res) => {
   res.render('../views/UDV/UDVcreateH.ejs');
 });
-<<<<<<< HEAD
 router.get('/UDVcreateM', (req, res) => {
   res.render('../views/UDVM/UDVcreateM.ejs');
 });
@@ -45,12 +44,8 @@ router.get('/UDVcreateA', (req, res) => {
 });
 router.get('/Exitoso', (req, res) => {
   res.render('../views/exitoso.ejs');
-=======
-
-router.get('/register', (req, res) => {
-  res.render('register');
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 });
+
 
 // Registro de usuario
 router.post('/register', async (req, res) => {
@@ -162,25 +157,20 @@ const requireRole = (roles) => {
 };
 
 // Rutas protegidas
-<<<<<<< HEAD
+
 // pagina principal //
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
+
 router.get('/', requireRole(['1', '2', '3', '4', '5', '6']), (req, res) => {
   res.render('../views/homes/homeadmin.ejs', {
     login: true,
     nom: req.session.nom,
   });
 });
-<<<<<<< HEAD
 // registro //
 router.get('/register', requireRole(['1']), (req, res) => {
   res.render('register');
 });
 // homes //
-=======
-
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 router.get(
   '/homeUDV',
   requireRole(['1', '2', '3', '4', '5', '6']),
@@ -188,7 +178,6 @@ router.get(
     res.render('../views/homes/homeUDV.ejs');
   },
 );
-<<<<<<< HEAD
 router.get(
   '/homejovenes',
   requireRole(['1', '2', '3', '4', '5', '6']),
@@ -205,14 +194,12 @@ router.get(
   },
 );
 // hombres UDV //
-=======
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
 router.get(
   '/UDVindexH',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterio', (error, results) => {
+      conexion().query('SELECT * FROM infoministerio', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -225,12 +212,11 @@ router.get(
     });
   },
 );
-<<<<<<< HEAD
 router.get(
   '/UDVinformeH',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterio', (error, results) => {
+      conexion().query('SELECT * FROM infoministerio', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -248,7 +234,7 @@ router.get(
   '/UDVasistenciaH',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterio', (error, results) => {
+      conexion().query('SELECT * FROM infoministerio', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -261,13 +247,11 @@ router.get(
     });
   },
 );
-=======
 
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 router.get('/UDVedit/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterio WHERE id=?',
+    'SELECT * FROM infoministerio WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -279,11 +263,10 @@ router.get('/UDVedit/:id', requireRole(['1', '2', '3']), (req, res) => {
     },
   );
 });
-<<<<<<< HEAD
 router.get('/UDVeditAsistenciaH/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterio WHERE id=?',
+    'SELECT * FROM infoministerio WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -301,7 +284,7 @@ router.get(
   '/UDVindexM',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioM', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriom', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -317,14 +300,14 @@ router.get(
 router.get('/UDVeditM/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioM WHERE id=?',
+    'SELECT * FROM infoministeriom WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
         console.log(error);
         return;
       } else {
-        res.render('../views/UDVM/UDVeditM.ejs', { infoMinisterioM: results[0] });
+        res.render('../views/UDVM/UDVeditm.ejs', { infoMinisterioM: results[0] });
       }
     },
   );
@@ -333,7 +316,7 @@ router.get(
   '/UDVinformeM',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioM', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriom', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -350,7 +333,7 @@ router.get(
   '/UDVasistenciaM',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioM', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriom', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -366,7 +349,7 @@ router.get(
 router.get('/UDVeditAsistenciaM/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioM WHERE id=?',
+    'SELECT * FROM infoministeriom WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -383,7 +366,7 @@ router.get(
   '/UDVindexT',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioT', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriot', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -399,7 +382,7 @@ router.get(
 router.get('/UDVeditT/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioT WHERE id=?',
+    'SELECT * FROM infoministeriot WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -415,7 +398,7 @@ router.get(
   '/UDVasistenciaT',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioT', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriot', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -431,7 +414,7 @@ router.get(
 router.get('/UDVeditAsistenciaT/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioT WHERE id=?',
+    'SELECT * FROM infoministeriot WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -447,7 +430,7 @@ router.get(
   '/UDVinformeT',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioT', (error, results) => {
+      conexion().query('SELECT * FROM infoministeriot', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -467,7 +450,7 @@ router.get(
   '/UDVindexJ',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioJ', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioj', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -483,7 +466,7 @@ router.get(
 router.get('/UDVeditJ/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioJ WHERE id=?',
+    'SELECT * FROM infoministerioj WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -499,7 +482,7 @@ router.get(
   '/UDVasistenciaJ',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioJ', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioj', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -515,7 +498,7 @@ router.get(
 router.get('/UDVeditAsistenciaJ/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioJ WHERE id=?',
+    'SELECT * FROM infoministerioj WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -531,7 +514,7 @@ router.get(
   '/UDVinformeJ',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioJ', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioj', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -551,7 +534,7 @@ router.get(
   '/UDVindexA',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioA', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioa', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -567,7 +550,7 @@ router.get(
 router.get('/UDVeditA/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioA WHERE id=?',
+    'SELECT * FROM infoministerioa WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -583,7 +566,7 @@ router.get(
   '/UDVasistenciaA',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioA', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioa', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -599,7 +582,7 @@ router.get(
 router.get('/UDVeditAsistenciaA/:id', requireRole(['1', '2', '3']), (req, res) => {
   const id = req.params.id;
   conexion().query(
-    'SELECT * FROM infoMinisterioA WHERE id=?',
+    'SELECT * FROM infoministerioa WHERE id=?',
     [id],
     (error, results) => {
       if (error) {
@@ -615,7 +598,7 @@ router.get(
   '/UDVinformeA',
   requireRole(['1', '2', '3', '4', '5', '6']),
   (req, res) => {
-      conexion().query('SELECT * FROM infoMinisterioA', (error, results) => {
+      conexion().query('SELECT * FROM infoministerioa', (error, results) => {
       if (error) {
         console.log(error);
         return;
@@ -628,16 +611,12 @@ router.get(
     });
   },
 );
-=======
 
-// Resto de las rutas protegidas...
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 
 // Tablas
 const crud = require('../middlewares/crud_UDV_info.js');
 router.post('/save', crud.save);
 router.post('/update', crud.update);
-<<<<<<< HEAD
 router.post('/updateA', crud.updateA);
 router.post('/saveM', crud.saveM);
 router.post('/updateM', crud.updateM);
@@ -651,7 +630,5 @@ router.post('/updateJ2', crud.updateJ2);
 router.post('/saveA', crud.saveA);
 router.post('/updateA1', crud.updateA1);
 router.post('/updateA2', crud.updateA2);
-=======
 
->>>>>>> 3d337017bec7f0d10dbb168cef55ae6217a5e9c2
 module.exports = router;
